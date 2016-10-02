@@ -1,0 +1,519 @@
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../styles/print.css">
+<script>
+$(document).ready(function(e) {
+	$("table").width('700');
+	$("table").css('font-size','12px');
+	$("table").css('text-decoration','none');
+	$('a[target="_blank"]').each(function(index, element) {
+		$(this).replaceWith($(this).text());
+	});
+	$(".fl_region").removeAttr('href');
+});
+</script>
+<style>
+
+body { width: 800px; font-size: 12px;}
+
+a:link, a:active, a:hover
+	 { text-decoration: none;
+		 font-color: black;
+	}
+</style>
+
+<script>
+$(document).ready(function() { 
+	function GetURLParameter(sParam)
+	{
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++)
+			{ 
+				var sParameterName = sURLVariables[i].split('=');
+					if (sParameterName[0] == sParam)
+						{ 
+							return sParameterName[1];
+						}
+			}
+		}
+
+	var fieldkey = GetURLParameter('fieldkey');
+	var alphaletter = GetURLParameter('alphaletter');
+	var countryname = GetURLParameter('countryname');
+	var countrycode = GetURLParameter('countrycode');
+
+
+	$("#alpha").html(alphaletter);
+	$("#" + fieldkey).addClass('selected');
+	
+	//$('html,body').animate({scrollTop:$('#' + fieldkey).offset.top + 20},1000);
+	$("#" + fieldkey).offset({top: 20});
+	
+});
+</script>
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="fieldlisting1"  >
+  <tr height="25">
+    <td style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;" class="region">Field Listing<strong> :: Demographic profile</strong></span></td>
+    <td align="right" valign="middle" style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;"> 
+<script language="javascript" type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+</td>
+  </tr>
+</table>
+<table id="fieldlisting"  cellpadding="6" cellspacing="2" width="100%">
+  <tr>
+    <td colspan="2">
+      <span class="category_data">This entry describes a country’s key demographic features and trends and how they vary among regional, ethnic, and socioeconomic sub-populations.  Some of the topics addressed are population age structure, fertility, health, mortality, poverty, education, and migration.</span></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+	
+	</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr bgcolor="#F8f8e7" valign="middle" height="25">
+    
+    <th scope="col"width="200" align="middle" style="padding-left: 5px;"><div class="smalltext"><strong>Country</strong></div></th>
+    
+    <th scope="col"align="middle" class="smalltext" style="padding-left: 5px;"> Demographic profile </th>
+  </tr>
+</table>
+
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="ar" >
+        
+      <tr><td colspan="2"><a name="ar"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ar.html" style="font-weight: bold;" >Argentina</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Argentina's population continues to grow but at a slower rate because of its steadily declining birth rate. Argentina's fertility decline began earlier than in the rest of Latin America, occurring most rapidly between the early 20th century and the 1950s and then becoming more gradual. Life expectancy has been improving, most notably among the young and the poor. While the population under age 15 is shrinking, the youth cohort - ages 15-24 - is the largest in Argentina's history and will continue to bolster the working-age population. If this large working-age population is well-educated and gainfully employed, Argentina is likely to experience an economic boost and possibly higher per capita savings and investment. Although literacy and primary school enrollment are nearly universal, grade repetition is problematic and secondary school completion is low. Both of these issues vary widely by region and socioeconomic group. 
+      <br />
+      Argentina has been primarily a country of immigration for most of its history, welcoming European immigrants after its independence in the 19th century and attracting especially large numbers from Spain and Italy. European immigration diminished in the 1950s, when Argentina's military dictatorships tightened immigration rules and European economies rebounded. Regional migration, however, continued to supply low-skilled workers and today it accounts for three-quarters of Argentina's immigrant population. The first waves of highly skilled Argentine emigrant workers headed mainly to the United States and Spain in the 1960s and 1970s. The ongoing European economic crisis is driving the return migration of some Argentinean and other Latin American nationals, as well as the immigration of Europeans to South America, where Argentina is a key recipient. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="bh" >
+      
+      <tr><td colspan="2"><a name="bh"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/bh.html" style="font-weight: bold;" >Belize</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Migration continues to transform Belize's population. About 16% of Belizeans live abroad, while immigrants constitute approximately 15% of Belize's population. Belizeans seeking job and educational opportunities have preferred to emigrate to the United States rather than former colonizer Great Britain because of the United States' closer proximity and stronger trade ties with Belize. Belizeans also emigrate to Canada, Mexico, and English-speaking Caribbean countries. The emigration of a large share of Creoles (Afro-Belizeans) and the influx of Central American immigrants, mainly Guatemalans, Salvadorans, and Hondurans, has changed Belize's ethnic composition. Mestizos have become the largest ethnic group, and Belize now has more native Spanish speakers than English or Creole speakers, despite English being the official language. In addition, Central American immigrants are establishing new communities in rural areas, which contrasts with the urbanization trend seen in neighboring countries. Recently, Chinese, European, and North American immigrants have become more frequent. 
+      <br />
+      Immigration accounts for an increasing share of Belize's population growth rate, which is steadily falling due to fertility decline. Belize's declining birth rate and its increased life expectancy are creating an aging population. As the elderly population grows and nuclear families replace extended households, Belize's government will be challenged to balance a rising demand for pensions, social services, and healthcare for its senior citizens with the need to reduce poverty and social inequality and to improve sanitation. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="bl" >
+        
+      <tr><td colspan="2"><a name="bl"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/bl.html" style="font-weight: bold;" >Bolivia</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Bolivia ranks at or near the bottom among Latin American countries in several areas of health and development, including poverty, education, fertility, malnutrition, mortality, and life expectancy. On the positive side, more children are being vaccinated and more pregnant women are getting prenatal care and having skilled health practitioners attend their births. Bolivia's income inequality is the highest in Latin America and one of the highest in the world. Public education is of poor quality, and educational opportunities are among the most unevenly distributed in Latin America, with girls and indigenous and rural children less likely to be literate or to complete primary school. The lack of access to education and family planning services helps to sustain Bolivia's high fertility rate - approximately three children per woman. Bolivia's lack of clean water and basic sanitation, especially in rural areas, contributes to health problems. 
+      <br />
+      Almost 7% of Bolivia's population lives abroad, primarily to work in Argentina, Brazil, Spain, and the United States. In recent years, more restrictive immigration policies in Europe and the United States have increased the flow of Bolivian emigrants to neighboring Argentina and Brazil. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="br" >
+      
+      <tr><td colspan="2"><a name="br"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/br.html" style="font-weight: bold;" >Brazil</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Brazil's rapid fertility decline since the 1960s is the main factor behind the country's slowing population growth rate, aging population, and fast-paced demographic transition. Brasilia has not taken full advantage of its large working-age population to develop its human capital and strengthen its social and economic institutions but is funding a study abroad program to bring advanced skills back to the country. The current favorable age structure will begin to shift around 2025, with the labor force shrinking and the elderly starting to compose an increasing share of the total population. Well-funded public pensions have nearly wiped out poverty among the elderly, and Bolsa Familia and other social programs have lifted tens of millions out of poverty. More than half of Brazil's population is considered middle class, but poverty and income inequality levels remain high; the Northeast, North, and Center-West, women, and black, mixed race, and indigenous populations are disproportionately affected. Disparities in opportunities foster social exclusion and contribute to Brazil's high crime rate, particularly violent crime in cities and favelas. 
+      <br />
+      Brazil has traditionally been a net recipient of immigrants, with its southeast being the prime destination. After the importation of African slaves was outlawed in the mid-19th century, Brazil sought Europeans (Italians, Portuguese, Spaniards, and Germans) and later Asians (Japanese) to work in agriculture, especially coffee cultivation. Recent immigrants come mainly from Argentina, Chile, and Andean countries (many are unskilled illegal migrants) or are returning Brazilian nationals. Since Brazil's economic downturn in the 1980s, emigration to the United States, Europe, and Japan has been rising but is negligible relative to Brazil's total population. The majority of these emigrants are well-educated and middle-class. Fewer Brazilian peasants are emigrating to neighboring countries to take up agricultural work. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="ci" >
+        
+      <tr><td colspan="2"><a name="ci"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ci.html" style="font-weight: bold;" >Chile</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Chile is in the advanced stages of demographic transition and is becoming an aging society - with fertility below replacement level, low mortality rates, and life expectancy on par with developed countries. Nevertheless, with its dependency ratio nearing its low point, Chile could benefit from its favorable age structure. It will need to keep its large working-age population productively employed, while preparing to provide for the needs of its growing proportion of elderly people, especially as women - the traditional caregivers - increasingly enter the workforce. Over the last two decades, Chile has made great strides in reducing its poverty rate, which is now lower than most Latin American countries. However, its severe income inequality ranks as the worst among members of the Organization for Economic Cooperation and Development. Unequal access to quality education perpetuates this uneven income distribution. 
+      <br />
+      Chile has historically been a country of emigration but has slowly become more attractive to immigrants since transitioning to democracy in 1990 and improving its economic stability (other regional destinations have concurrently experienced deteriorating economic and political conditions). Most of Chile's small but growing foreign-born population consists of transplants from other Latin American countries, especially Peru. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="co" >
+      
+      <tr><td colspan="2"><a name="co"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/co.html" style="font-weight: bold;" >Colombia</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Colombia is in the midst of a demographic transition resulting from steady declines in its fertility, mortality, and population growth rates. The birth rate has fallen from more than 6 children per woman in the 1960s to just above replacement level today as a result of increased literacy, family planning services, and urbanization. However, income inequality is among the worst in the world, and more than a third of the population lives below the poverty line. 
+      <br />
+      Colombia experiences significant legal and illegal economic emigration and refugee flows. Large-scale labor emigration dates to the 1960s; Venezuela and the United States continue to be the main host countries. Colombia is the largest source of Latin American refugees in Latin America, nearly 400,000 of whom live primarily in Venezuela and Ecuador. Forced displacement remains prevalent because of violence among guerrillas, paramilitary groups, and Colombian security forces. Afro-Colombian and indigenous populations are disproportionately affected. A leading NGO estimates that 5.2 million people have been displaced since 1985, while the Colombian Government estimates 3.6 million since 2000. These estimates may undercount actual numbers because not all internally displaced persons are registered. Historically, Colombia also has one of the world's highest levels of forced disappearances. About 30,000 cases have been recorded over the last four decades - although the number is likely to be much higher - including human rights activists, trade unionists, Afro-Colombians, indigenous people, and farmers in rural conflict zones. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="cs" >
+        
+      <tr><td colspan="2"><a name="cs"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/cs.html" style="font-weight: bold;" >Costa Rica</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Costa Rica's political stability, high standard of living, and well-developed social benefits system set it apart from its Central American neighbors. Through the government's sustained social spending - almost 20% of GDP annually - Costa Rica has made tremendous progress toward achieving its goal of providing universal access to education, healthcare, clean water, sanitation, and electricity. Since the 1970s, expansion of these services has led to a rapid decline in infant mortality, an increase in life expectancy at birth, and a sharp decrease in the birth rate. The average number of children born per women has fallen from about 7 in the 1960s to 3.5 in the early 1980s to below replacement level today. Costa Rica's poverty rate is lower than in most Latin American countries, but it has stalled at around 20% for almost two decades. 
+      <br />
+      Costa Rica is a popular regional immigration destination because of its job opportunities and social programs. Almost 9% of the population is foreign-born, with Nicaraguans comprising nearly three-quarters of the foreign population. Many Nicaraguans who perform unskilled seasonal labor enter Costa Rica illegally or overstay their visas, which continues to be a source of tension. Less than 3% of Costa Rica's population lives abroad. The overwhelming majority of expatriates have settled in the United States after completing a university degree or in order to work in a highly skilled field. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="ec" >
+      
+      <tr><td colspan="2"><a name="ec"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ec.html" style="font-weight: bold;" >Ecuador</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Ecuador's high poverty and income inequality most affect indigenous, mixed race, and rural populations. The government has increased its social spending to ameliorate these problems, but critics question the efficiency and implementation of its national development plan. Nevertheless, the conditional cash transfer program, which requires participants' children to attend school and have medical check-ups, has helped improve educational attainment and healthcare among poor children. Ecuador is stalled at above replacement level fertility and the population most likely will keep growing rather than stabilize. 
+      <br />
+      An estimated 2 to 3 million Ecuadorians live abroad, but increased unemployment in key receiving countries - Spain, the United States, and Italy - is slowing emigration and increasing the likelihood of returnees to Ecuador. The first large-scale emigration of Ecuadorians occurred between 1980 and 2000, when an economic crisis drove Ecuadorians from southern provinces to New York City, where they had trade contacts. A second, nationwide wave of emigration in the late 1990s was caused by another economic downturn, political instability, and a currency crisis. Spain was the logical destination because of its shared language and the wide availability of low-skilled, informal jobs at a time when increased border surveillance made illegal migration to the US difficult. Ecuador has a small but growing immigrant population and is Latin America's top recipient of refugees; 98% are neighboring Colombians fleeing violence in their country. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="es" >
+        
+      <tr><td colspan="2"><a name="es"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/es.html" style="font-weight: bold;" >El Salvador</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      El Salvador is the smallest and most densely populated country in Central America. It is well into its demographic transition, experiencing slower population growth, a decline in its number of youths, and the gradual aging of its population. The increased use of family planning has substantially lowered El Salvador's fertility rate, from approximately 6 children per woman in the 1970s to replacement level today. A 2008 national family planning survey showed that female sterilization remained the most common contraception method in El Salvador - its sterilization rate is among the highest in Latin America and the Caribbean - but that the use of injectable contraceptives is growing. Fertility differences between rich and poor and urban and rural women are narrowing. 
+      <br />
+      Salvadorans fled during the 1979 to 1992 civil war mainly to the United States but also to Canada and to neighboring Mexico, Guatemala, Honduras, Nicaragua, and Costa Rica. Emigration to the United States increased again in the 1990s and 2000s as a result of deteriorating economic conditions, natural disasters (Hurricane Mitch in 1998 and earthquakes in 2001), and family reunification. At least 20% of El Salvador's population lives abroad. The remittances they send home account for close to 20% of GDP, are the second largest source of external income after exports, and have helped reduce poverty. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="gt" >
+      
+      <tr><td colspan="2"><a name="gt"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/gt.html" style="font-weight: bold;" >Guatemala</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Guatemala is a predominantly poor country that struggles in several areas of health and development, including infant, child, and maternal mortality, malnutrition, literacy, and contraceptive awareness and use. The country's large indigenous population is disproportionately affected. Guatemala is the most populous country in Central America and has the highest fertility rate in Latin America. It also has the highest population growth rate in Latin America, which is likely to continue because of its large reproductive-age population and high birth rate. Almost half of Guatemala's population is under age 19, making it the youngest population in Latin America. Guatemala's total fertility rate has slowly declined during the last few decades due in part to limited government-funded health programs. However, the birth rate is still more than three children per woman and is markedly higher among its rural and indigenous populations. 
+      <br />
+      Guatemalans have a history of emigrating legally and illegally to Mexico, the United States, and Canada because of a lack of economic opportunity, political instability, and natural disasters. Emigration, primarily to the United States, escalated during the 1960 to 1996 civil war and accelerated after a peace agreement was signed. Thousands of Guatemalans who fled to Mexico returned after the war, but labor migration to southern Mexico continues. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="gy" >
+        
+      <tr><td colspan="2"><a name="gy"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/gy.html" style="font-weight: bold;" >Guyana</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Guyana is the only English-speaking country in South America and shares cultural and historical bonds with the Anglophone Caribbean. Guyana's two largest ethnic groups are the Afro-Guyanese (descendants of African slaves) and the Indo-Guyanese (descendants of Indian indentured laborers), which together comprise about three quarters of Guyana's population. Tensions periodically have boiled over between the two groups, which back ethnically based political parties and vote along ethnic lines. Poverty reduction has stagnated since the late 1990s. About one-third of the Guyanese population lives below the poverty line; indigenous people are disproportionately affected. Although Guyana's literacy rate is reported to be among the highest in the Western Hemisphere, the level of functional literacy is considerably lower, which has been attributed to poor education quality, teacher training, and infrastructure. 
+      <br />
+      Guyana's emigration rate is among the highest in the world - more than 55% of its citizens reside abroad - and it is one of the largest recipients of remittances relative to GDP among Latin American and Caribbean counties. Although remittances are a vital source of income for most citizens, the pervasive emigration of skilled workers deprives Guyana of professionals in healthcare and other key sectors. More than 80% of Guyanese nationals with tertiary level educations have emigrated. Brain drain and the concentration of limited medical resources in Georgetown hamper Guyana's ability to meet the health needs of its predominantly rural population. Guyana has one of the highest HIV prevalence rates in the region and continues to rely on international support for its HIV treatment and prevention programs. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="ho" >
+      
+      <tr><td colspan="2"><a name="ho"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ho.html" style="font-weight: bold;" >Honduras</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Honduras is one of the poorest countries in Latin America and has the world's highest murder rate. More than half of the population lives in poverty and per capita income is one of the lowest in the region. Poverty rates are higher among rural and indigenous people and in the south, west, and along the eastern border than in the north and central areas where most of Honduras' industries and infrastructure are concentrated. The increased productivity needed to break Honduras' persistent high poverty rate depends, in part, on further improvements in educational attainment. Although primary-school enrollment is near 100%, educational quality is poor, the drop-out rate and grade repetition remain high, and teacher and school accountability is low. 
+      <br />
+      Honduras' population growth rate has slowed since the 1990s, but it remains high at nearly 2% annually because the birth rate averages approximately three children per woman and more among rural, indigenous, and poor women. Consequently, Honduras' young adult population - ages 15 to 29 - is projected to continue growing rapidly for the next three decades and then stabilize or slowly shrink. Population growth and limited job prospects outside of agriculture will continue to drive emigration. Remittances represent about a fifth of GDP. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="nu" >
+        
+      <tr><td colspan="2"><a name="nu"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/nu.html" style="font-weight: bold;" >Nicaragua</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Despite being one of the poorest countries in Latin America, Nicaragua has improved its access to potable water and sanitation and has ameliorated its life expectancy, infant and child mortality, and immunization rates. However, income distribution is very uneven, and the poor, agriculturalists, and indigenous people continue to have less access to healthcare services. Nicaragua's total fertility rate has fallen from around 6 children per woman in 1980 to just above replacement level today, but the high birth rate among adolescents perpetuates a cycle of poverty and low educational attainment. 
+      <br />
+      Nicaraguans emigrate primarily to Costa Rica and to a lesser extent the United States. Nicaraguan men have been migrating seasonally to Costa Rica to harvest bananas and coffee since the early 20th century. Political turmoil, civil war, and natural disasters from the 1970s through the 1990s dramatically increased the flow of refugees and permanent migrants seeking jobs, higher wages, and better social and healthcare benefits. Since 2000, Nicaraguan emigration to Costa Rica has slowed and stabilized. Today roughly 300,000 Nicaraguans are permanent residents of Costa Rica - about 75% of the foreign population - and thousands more migrate seasonally for work, many illegally. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="pm" >
+      
+      <tr><td colspan="2"><a name="pm"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/pm.html" style="font-weight: bold;" >Panama</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Panama is a country of demographic and economic contrasts. It is in the midst of a demographic transition, characterized by steadily declining rates of fertility, mortality, and population growth, but disparities persist based on wealth, geography, and ethnicity. Panama has one of the fastest growing economies in Latin America and dedicates substantial funding to social programs, yet poverty and inequality remain prevalent. The indigenous population accounts for a growing share of Panama's poor and extreme poor, while the non-indigenous rural poor have been more successful at rising out of poverty through rural-to-urban labor migration. The government's large expenditures on untargeted, indirect subsidies for water, electricity, and fuel have been ineffective, but its conditional cash transfer program has shown some promise in helping to decrease extreme poverty among the indigenous population. 
+      <br />
+      Panama has expanded access to education and clean water, but the availability of sanitation and, to a lesser extent, electricity remains poor. The increase in secondary schooling - led by female enrollment - is spreading to rural and indigenous areas, which probably will help to alleviate poverty if educational quality and the availability of skilled jobs improve. Inadequate access to sanitation contributes to a high incidence of diarrhea in Panama's children, which is one of the main causes of Panama's elevated chronic malnutrition rate, especially among indigenous communities. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="pa" >
+        
+      <tr><td colspan="2"><a name="pa"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/pa.html" style="font-weight: bold;" >Paraguay</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Paraguay falls below the Latin American average in several socioeconomic categories, including immunization rates, potable water, sanitation, and secondary school enrollment, and has greater rates of income inequality and child and maternal mortality. Paraguay's poverty rate has declined in recent years but remains high, especially in rural areas, with more than a third of the population below the poverty line. However, the well-being of the poor in many regions has improved in terms of housing quality and access to clean water, telephone service, and electricity. The fertility rate continues to drop, declining sharply from an average 4.3 births per woman in the late 1990s to about 2 in 2013, as a result of the greater educational attainment of women, increased use of contraception, and a desire for smaller families among young women. 
+      <br />
+      Paraguay is a country of emigration; it has not attracted large numbers of immigrants because of political instability, civil wars, years of dictatorship, and the greater appeal of neighboring countries. Paraguay first tried to encourage immigration in 1870 in order to rebound from the heavy death toll it suffered during the War of the Triple Alliance, but it received few European and Middle Eastern immigrants. In the 20th century, limited numbers of immigrants arrived from Lebanon, Japan, South Korea, and China, as well as Mennonites from Canada, Russia, and Mexico. Large flows of Brazilian immigrants have been arriving since the 1960s, mainly to work in agriculture. Paraguayans continue to emigrate to Argentina, Brazil, Uruguay, the United States, Italy, Spain, and France. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="pe" >
+      
+      <tr><td colspan="2"><a name="pe"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/pe.html" style="font-weight: bold;" >Peru</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Peru's urban and coastal communities have benefited much more from recent economic growth than rural, Afro-Peruvian, indigenous, and poor populations of the Amazon and mountain regions. The poverty rate has dropped substantially during the last decade but remains stubbornly high at about 30% (more than 55% in rural areas). After remaining almost static for about a decade, Peru's malnutrition rate began falling in 2005, when the government introduced a coordinated strategy focusing on hygiene, sanitation, and clean water. School enrollment has improved, but achievement scores reflect ongoing problems with educational quality. Many poor children temporarily or permanently drop out of school to help support their families. About a quarter to a third of Peruvian children aged 6 to 14 work, often putting in long hours at hazardous mining or construction sites. 
+      <br />
+      Peru was a country of immigration in the 19th and early 20th centuries, but has become a country of emigration in the last few decades. Beginning in the 19th century, Peru brought in Asian contract laborers mainly to work on coastal plantations. Populations of Chinese and Japanese descent - among the largest in Latin America - are economically and culturally influential in Peru today. Peruvian emigration began rising in the 1980s due to an economic crisis and a violent internal conflict, but outflows have stabilized in the last few years as economic conditions have improved. Nonetheless, more than 2 million Peruvians have emigrated in the last decade, principally to the US, Spain, and Argentina. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="ns" >
+        
+      <tr><td colspan="2"><a name="ns"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ns.html" style="font-weight: bold;" >Suriname</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Suriname is a pluralistic society consisting primarily of Creoles (persons of mixed African and European heritage), the descendants of escaped African slaves known as Maroons, and the descendants of Indian and Javanese contract workers. The country overall is in full, post-industrial demographic transition, with a low fertility rate, a moderate mortality rate, and a rising life expectancy. However, the Maroon population of the rural interior lags behind because of lower educational attainment and contraceptive use, higher malnutrition, and significantly less access to electricity, potable water, sanitation, infrastructure, and health care. 
+      <br />
+      Some 350,000 people of Surinamese descent live in the Netherlands, Suriname's former colonial ruler. In the 19th century, better-educated, largely Dutch-speaking Surinamese began emigrating to the Netherlands. World War II interrupted the outflow, but it resumed after the war when Dutch labor demands grew - emigrants included all segments of the Creole population. Suriname still is strongly influenced by the Netherlands because most Surinamese have relatives living there and it is the largest supplier of development aid. Other emigration destinations include French Guiana and the United States. Suriname's immigration rules are flexible, and the country is easy to enter illegally because rainforests obscure its borders. Since the mid-1980s, Brazilians have settled in Suriname's capital, Paramaribo, or eastern Suriname, where they mine gold. This immigration is likely to slowly re-orient Suriname toward its Latin American roots. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#EEEEEE" id="uy" >
+      
+      <tr><td colspan="2"><a name="uy"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/uy.html" style="font-weight: bold;" >Uruguay</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Uruguay rates high for most development indicators and is known for its secularism, liberal social laws, and well-developed social security, health, and educational systems. It is one of the few countries in Latin America and the Caribbean where the entire population has access to clean water. Uruguay's provision of free primary through university education has contributed to the country's high levels of literacy and educational attainment. However, the emigration of human capital has diminished the state's return on its investment in education. Remittances from the roughly 18% of Uruguayans abroad amount to less than 1 percent of national GDP. The emigration of young adults and a low birth rate are causing Uruguay's population to age rapidly. 
+      <br />
+      In the 1960s, Uruguayans for the first time emigrated en masse - primarily to Argentina and Brazil - because of economic decline and the onset of more than a decade of military dictatorship. Economic crises in the early 1980s and 2002 also triggered waves of emigration, but since 2002 more than 70% of Uruguayan emigrants have selected the US and Spain as destinations because of better job prospects. Uruguay had a tiny population upon its independence in 1828 and welcomed thousands of predominantly Italian and Spanish immigrants, but the country has not experienced large influxes of new arrivals since the aftermath of World War II. More recent immigrants include Peruvians and Arabs. 
+        </td>
+        </tr>
+        </table>
+        
+
+        
+        <table width="100%" cellspacing="4" cellpadding="0" border="0" style="padding-bottom:4px;"  bgcolor="#FFFFFF" id="ve" >
+        
+      <tr><td colspan="2"><a name="ve"></a></td></tr>
+      <tr>
+      
+      
+      
+        <td valign="top" width="200" style="border-right:2px solid white; padding-left:4px;" class="fl_region"><a href="../geos/ve.html" style="font-weight: bold;" >Venezuela</a>
+          
+      
+      <td class="category_data"  valign="top" style="padding-left:5px;">
+      Social investment in Venezuela during the CHAVEZ administration reduced poverty from nearly 50 % in 1999 to about 27 % in 2011, increased school enrollment, substantially decreased infant and child mortality, and improved access to potable water and sanitation through social investment. "Missions" dedicated to education, nutrition, healthcare, and sanitation were funded through petroleum revenues. The sustainability of this progress remains questionable, however, as the continuation of these social programs depends on the prosperity of Venezuela's oil industry. In the long-term, education and health care spending may increase economic growth and reduce income inequality, but rising costs and the staffing of new health care jobs with foreigners are slowing development. 
+      <br />
+      Since CHAVEZ came to power in 1999, more than one million predominantly middle- and upper-class Venezuelans are estimated to have emigrated. The brain drain is attributed to a repressive political system, lack of economic opportunities, steep inflation, a high crime rate, and corruption. Thousands of oil engineers emigrated to Canada, Colombia, and the United States following Chavez's firing of over 20,000 employees of the state-owned petroleum company during a 2002-2003 oil strike. Additionally, thousands of Venezuelans of European descent have taken up residence in their ancestral homelands. Nevertheless, Venezuela continues to attract immigrants from South America and southern Europe because of its lenient migration policy and the availability of education and health care. Venezuela also has been a fairly accommodating host to more than 200,000 Colombian refugees. 
+</td>
+</tr>
+</table>
+
+  <script>
+	$(document).ready(function() {
+		// Show or hide the sticky footer button
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 350) {
+				$('.go-top1').fadeIn(100);
+			} else {
+				$('.go-top1').fadeOut(100);
+			}
+		});
+		
+		// Animate the scroll to top
+		$('.go-top1').click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({scrollTop: 350}, 300);
+		})
+	});
+</script>	
