@@ -1,145 +1,145 @@
 
-<script src="../js/jquery-1.8.3.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../styles/print.css">
-<script>
-$(document).ready(function(e) {
-	$("table").width('700');
-	$("table").css('font-size','12px');
-	$("table").css('text-decoration','none');
-	$('a[target="_blank"]').each(function(index, element) {
-		$(this).replaceWith($(this).text());
-	});
-	$(".fl_region").removeAttr('href');
-});
-</script>
-<style>
-
-body { width: 800px; font-size: 12px;}
-
-a:link, a:active, a:hover
-	 { text-decoration: none;
-		 font-color: black;
-	}
-</style>
-
-<script>
-$(document).ready(function() { 
-	function GetURLParameter(sParam)
-	{
-		var sPageURL = window.location.search.substring(1);
-		var sURLVariables = sPageURL.split('&');
-		for (var i = 0; i < sURLVariables.length; i++)
-			{ 
-				var sParameterName = sURLVariables[i].split('=');
-					if (sParameterName[0] == sParam)
-						{ 
-							return sParameterName[1];
-						}
-			}
-		}
-
-	var fieldkey = GetURLParameter('fieldkey');
-	var alphaletter = GetURLParameter('alphaletter');
-	var countryname = GetURLParameter('countryname');
-	var countrycode = GetURLParameter('countrycode');
-
-
-	$("#alpha").html(alphaletter);
-	$("#" + fieldkey).addClass('selected');
-	
-	//$('html,body').animate({scrollTop:$('#' + fieldkey).offset.top + 20},1000);
-	$("#" + fieldkey).offset({top: 20});
-	
-});
-</script>
-
-
-
-
-
-
-<script language="javascript" type="text/javascript">
-<!--
-function MM_openBrWindow(theURL,winName,features) { //v2.0
-  window.open(theURL,winName,features);
-}
-//-->
-</script>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0" id="fieldlisting1"  >
-  <tr height="25">
-    <td style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;" class="region">Field Listing<strong> :: Major urban areas - population</strong></span></td>
-    <td align="right" valign="middle" style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;"> 
-<script language="javascript" type="text/javascript">
-<!--
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-
-
-</td>
-  </tr>
-</table>
-<table id="fieldlisting"  cellpadding="6" cellspacing="2" width="100%">
-  <tr>
-    <td colspan="2">
-      <span class="category_data">This entry provides the population of the capital and up to four major cities defined as urban agglomerations with populations of at least 750,000 people. An <em>urban agglomeration</em> is defined as comprising the city or town proper and also the suburban fringe or thickly settled territory lying outside of, but adjacent to, the boundaries of the city. For smaller countries, lacking urban centers of 750,000 or more, only the population of the capital is presented.</span></td>
-  </tr>
-  <tr>
-    <td colspan="2">
-	
-	</td>
-  </tr>
-</table>
-<table width="100%" border="0" cellspacing="2" cellpadding="2">
-  <tr bgcolor="#F8f8e7" valign="middle" height="25">
-    
-    <th scope="col"width="200" align="middle" style="padding-left: 5px;"><div class="smalltext"><strong>Country</strong></div></th>
-    
-    <th scope="col"align="middle" class="smalltext" style="padding-left: 5px;"> Major urban areas - population </th>
-  </tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-  <script>
-	$(document).ready(function() {
-		// Show or hide the sticky footer button
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 350) {
-				$('.go-top1').fadeIn(100);
-			} else {
-				$('.go-top1').fadeOut(100);
-			}
-		});
-		
-		// Animate the scroll to top
-		$('.go-top1').click(function(event) {
-			event.preventDefault();
-			
-			$('html, body').animate({scrollTop: 350}, 300);
-		})
-	});
-</script>	
+        <!doctype html>
+	<html>
+	<head>
+        <script src=../js/jquery-1.8.3.min.js></script>
+	<link rel=stylesheet type=text/css href=../styles/print.css>
+        </head>
+	<body width=700px font-size=12px>
+        <div class=text-holder>
+        <div class=fbTitleRankOrder>FIELD LISTING :: <strong>TERRORIST GROUPS - FOREIGN</strong></div>
+<div class=rankOrderDesc>This entry provides the population of the capital and up to four major cities defined as urban agglomerations with populations of at least 750,000 people. An <em>urban agglomeration</em> is defined as comprising the city or town proper and also the suburban fringe or thickly settled territory lying outside of, but adjacent to, the boundaries of the city. For smaller countries, lacking urban centers of 750,000 or more, only the population of the capital is presented.
+             <p class=comparison><br /><a alt=Country comparison to the world href=../rankorder/2265rank.html title=Country comparison to the world ><strong>Country Comparison to the World</strong></a></p></div>
+<table id=fieldListing>
+                 <tbody>
+                     <tr class=fieldHeading valign=middle bgcolor=#F8f8e7 height=25><th width=200px>Country</th><th>MAJOR URBAN AREAS - POPULATION </th></tr>
+<tr id=af><td class=country><a href=../geos/af.html>Afghanistan</td><td class=fieldData>
+<strong>Harakat ul-Mujahidin (HUM): </strong><br />
+goals: aims to annex Kashmi into Pakistan and establish an Islamic state in Kashmir<br />
+areas of operation: maintains an operational presence, including running a paramilitary training camp in the east<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ag"><td class=country><a href=../geos/ag.html>Algeria</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Algeria as its Wilayat al-Jazair<br />
+</td></tr>
+<tr id=be><td class=country><a href=../geos/be.html>Belgium</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: claimed responsibility for twin bombings in Belgium at the Brussels Airport and Baelbeek metro station in Brussels near the European Union headquarters on 22 March 2016, killing at least 34 civilians and injuring at least 170<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bn"><td class=country><a href=../geos/bn.html>Benin</td><td class=fieldData>
+<strong>Boko Haram: </strong><br />
+goals: aims to establish an Islamic State; opposes any polical or social activity associated with Western society, including voting, attending secular schools, and wearing shirts and trousers<br />
+areas of operation: maintains an operational presence<br />
+</td></tr>
+<tr id=cm><td class=country><a href=../geos/cm.html>Cameroon</td><td class=fieldData>
+<strong>Boko Haram: </strong><br />
+goals: aims to establish an Islamic State; opposes any polical or social activity associated with Western society, including voting, attending secular schools, and wearing shirts and trousers<br />
+areas of operation: maintains an operational presence<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cd"><td class=country><a href=../geos/cd.html>Chad</td><td class=fieldData>
+<strong>Boko Haram: </strong><br />
+goals: aims to establish an Islamic State; opposes any polical or social activity associated with Western society, including voting, attending secular schools, and wearing shirts and trousers<br />
+areas of operation: maintains an operational presence<br />
+</td></tr>
+<tr id=eg><td class=country><a href=../geos/eg.html>Egypt</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Egypt as its Wilayat Sinai<br />
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains an operational presence, especially along the Egypt-Israel border, where operatives stage attacks inside Israeli territory<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="fr"><td class=country><a href=../geos/fr.html>France</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: three coordinated teams of suicide bombers and shooters conducted attacks on 13 November 2015 in Paris and its northern suburb Saint-Denis, killing at least 130 people and wounded approximately 360<br />
+</td></tr>
+<tr id=gz><td class=country><a href=../geos/gz.html>Gaza Strip</td><td class=fieldData>
+<strong>Abdallah Azzam Brigades (AAB): </strong><br />
+goals: aims to disrupt Israel's economy and its efforts to establish security<br />
+areas of operation: operates as the Marwan Haddad Division; launches homemade rockets into Israeli territory<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="in"><td class=country><a href=../geos/in.html>India</td><td class=fieldData>
+<strong>Harakat ul-Mujahidin (HUM): </strong><br />
+goals: aims to annex Kashmi into Pakistan and establish an Islamic state in Kashmir<br />
+areas of operation: maintains an operational presence, conducting attacks against Indian troops and civilian targets in the Kashmir region since at least 2005<br />
+<br />
+<strong>Liberation Tigers of Tamil Eelam (LTTE): </strong><br />
+goals: aims to revive the movement and resume paramilitary operations; ultimate goal is to establish a Tamil homeland<br />
+areas of operation: maintains safehavens, transit routes, human traffickings, and an operational presence in an effort to revive the movement and conduct attacks; authorities continued in 2016 to pursue leaders, operatives, and supporters for arrest; in 2014, authorities arrested operatives for plotting imminent attacks in India's southern cities of Chennai and Bangalore<br />
+</td></tr>
+<tr id=iz><td class=country><a href=../geos/iz.html>Iraq</td><td class=fieldData>
+<strong>Abu Nidal Organization (ANO): </strong><br />
+goals: aims to destroy Israel through armed conflict<br />
+areas of operation: although former and possibly current associates may be in Iraq, the group is considered inactive<br />
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains networks and an operational presence throughout the country; targets primarily religious and ethnic minorities<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="is"><td class=country><a href=../geos/is.html>Israel</td><td class=fieldData>
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains an operational presence, especially in the south<br />
+</td></tr>
+<tr id=le><td class=country><a href=../geos/le.html>Lebanon</td><td class=fieldData>
+<strong>Abu Nidal Organization (ANO): </strong><br />
+goals: aims to destroy Israel through armed conflict<br />
+areas of operation: although former and possibly current associates may be in Lebanon, the group is considered inactive<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ly"><td class=country><a href=../geos/ly.html>Libya</td><td class=fieldData>
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains networks for operational planning, logistics, transferring funds, and smuggling fighters and arms to Syria from Libya<br />
+</td></tr>
+<tr id=my><td class=country><a href=../geos/my.html>Malaysia</td><td class=fieldData>
+<strong>Liberation Tigers of Tamil Eelam (LTTE): </strong><br />
+goals: aims to revive the movement and resume paramilitary operations; ultimate goal is to establish a Tamil homeland<br />
+areas of operation: maintains safehavens, transit routes, human traffickings, and an operational presence in an effort to revive the movement and conduct attacks; authorities continued in 2016 to pursue leaders, operatives, and supporters for arrest<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ng"><td class=country><a href=../geos/ng.html>Niger</td><td class=fieldData>
+<strong>Boko Haram: </strong><br />
+goals: aims to establish an Islamic State; opposes any polical or social activity associated with Western society, including voting, attending secular schools, and wearing shirts and trousers<br />
+areas of operation: maintains an operational presence<br />
+</td></tr>
+<tr id=pk><td class=country><a href=../geos/pk.html>Pakistan</td><td class=fieldData>
+<strong>Khorasan (ISIL-K): </strong><br />
+goals: aims to establish an Islamic caliphate in the Afghanistan-Pakistan region<br />
+areas of operation: maintains a limited operational and recruitment presence across the country; conducts small-scale shooting or bombing attacks against Shi&rsquo;a Muslims, military installations, and government buildings; claimed responsibility for the 13 May 2015 shooting attack against Shia Muslim bus passangers in Karachi, killing 45; refers to Pakistan and Afghanistan as its Wilayat al-Khorasan<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="rs"><td class=country><a href=../geos/rs.html>Russia</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence in the northern Caucasus's Dagestan, Chechnya, Ingushetia, and Kabardino-Balkaria (ISIL's Wilayat Kavkaz) regions under Rustam ASELDEROV (a.k.a. Abu Mukhammad Kadarsky), where ISIL has been known as ISIL-Caucasus Province (ISIL-CP) since 23 June 2015; ISIL-CP claimed responsibility for attacking a Russian military base on 2 September 2015 in Magaramkent in southern Dagestan, killing and injuring several Russian citizens<br />
+</td></tr>
+<tr id=sa><td class=country><a href=../geos/sa.html>Saudi Arabia</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Saudi Arabia as its Wilayat Haramayn<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sy"><td class=country><a href=../geos/sy.html>Syria</td><td class=fieldData>
+<strong>Abdallah Azzam Brigades (AAB): </strong><br />
+goals: aims to attack Shi'a Muslim and Western interests<br />
+areas of operation: maintains an operational presence<br />
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains networks and an operational presence throughout the country; targets primarily religious and ethnic minorities<br />
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains networks for operational planning, logistics, transferring funds, and smuggling fighters and arms to Syria from the Gaza Strip and Libya<br />
+</td></tr>
+<tr id=tu><td class=country><a href=../geos/tu.html>Turkey</td><td class=fieldData>
+<strong>Kurdistan Workers Party (PKK) (Kongra-Gel): </strong><br />
+goals: aims to establish Kurdistan, which is now southwestern Turkey<br />
+areas of operation: maintains networks and operational presence primarily in southeastern Turkey<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ym"><td class=country><a href=../geos/ym.html>Yemen</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goal: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Yemen as its Wilayat Sanaa<br />
+</td></tr>
+   </tbody>
+            </table>
+           </body>
+         </html>

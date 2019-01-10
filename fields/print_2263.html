@@ -1,145 +1,1316 @@
 
-<script src="../js/jquery-1.8.3.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../styles/print.css">
-<script>
-$(document).ready(function(e) {
-	$("table").width('700');
-	$("table").css('font-size','12px');
-	$("table").css('text-decoration','none');
-	$('a[target="_blank"]').each(function(index, element) {
-		$(this).replaceWith($(this).text());
-	});
-	$(".fl_region").removeAttr('href');
-});
-</script>
-<style>
-
-body { width: 800px; font-size: 12px;}
-
-a:link, a:active, a:hover
-	 { text-decoration: none;
-		 font-color: black;
-	}
-</style>
-
-<script>
-$(document).ready(function() { 
-	function GetURLParameter(sParam)
-	{
-		var sPageURL = window.location.search.substring(1);
-		var sURLVariables = sPageURL.split('&');
-		for (var i = 0; i < sURLVariables.length; i++)
-			{ 
-				var sParameterName = sURLVariables[i].split('=');
-					if (sParameterName[0] == sParam)
-						{ 
-							return sParameterName[1];
-						}
-			}
-		}
-
-	var fieldkey = GetURLParameter('fieldkey');
-	var alphaletter = GetURLParameter('alphaletter');
-	var countryname = GetURLParameter('countryname');
-	var countrycode = GetURLParameter('countrycode');
-
-
-	$("#alpha").html(alphaletter);
-	$("#" + fieldkey).addClass('selected');
-	
-	//$('html,body').animate({scrollTop:$('#' + fieldkey).offset.top + 20},1000);
-	$("#" + fieldkey).offset({top: 20});
-	
-});
-</script>
-
-
-
-
-
-
-<script language="javascript" type="text/javascript">
-<!--
-function MM_openBrWindow(theURL,winName,features) { //v2.0
-  window.open(theURL,winName,features);
-}
-//-->
-</script>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0" id="fieldlisting1"  >
-  <tr height="25">
-    <td style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;" class="region">Field Listing<strong> :: Pipelines</strong></span></td>
-    <td align="right" valign="middle" style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;"> 
-<script language="javascript" type="text/javascript">
-<!--
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-
-
-</td>
-  </tr>
-</table>
-<table id="fieldlisting"  cellpadding="6" cellspacing="2" width="100%">
-  <tr>
-    <td colspan="2">
-      <span class="category_data">This entry gives the lengths and types of pipelines for transporting products like natural gas, crude oil, or petroleum products.</span></td>
-  </tr>
-  <tr>
-    <td colspan="2">
-	
-	</td>
-  </tr>
-</table>
-<table width="100%" border="0" cellspacing="2" cellpadding="2">
-  <tr bgcolor="#F8f8e7" valign="middle" height="25">
-    
-    <th scope="col"width="200" align="middle" style="padding-left: 5px;"><div class="smalltext"><strong>Country</strong></div></th>
-    
-    <th scope="col"align="middle" class="smalltext" style="padding-left: 5px;"> Pipelines </th>
-  </tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-  <script>
-	$(document).ready(function() {
-		// Show or hide the sticky footer button
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 350) {
-				$('.go-top1').fadeIn(100);
-			} else {
-				$('.go-top1').fadeOut(100);
-			}
-		});
-		
-		// Animate the scroll to top
-		$('.go-top1').click(function(event) {
-			event.preventDefault();
-			
-			$('html, body').animate({scrollTop: 350}, 300);
-		})
-	});
-</script>	
+        <!doctype html>
+	<html>
+	<head>
+        <script src=../js/jquery-1.8.3.min.js></script>
+	<link rel=stylesheet type=text/css href=../styles/print.css>
+        </head>
+	<body width=700px font-size=12px>
+        <div class=text-holder>
+        <div class=fbTitleRankOrder>FIELD LISTING :: <strong>CITIZENSHIP</strong></div>
+<table id=fieldListing>
+                 <tbody>
+                     <tr class=fieldHeading valign=middle bgcolor=#F8f8e7 height=25><th width=200px>Country</th><th>PIPELINES </th></tr>
+<tr id=af><td class=country><a href=../geos/af.html>Afghanistan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must have been born in - and continuously lived in - Afghanistan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="al"><td class=country><a href=../geos/al.html>Albania</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Albania<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=ag><td class=country><a href=../geos/ag.html>Algeria</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the mother must be a citizen of Algeria<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="aq"><td class=country><a href=../geos/aq.html>American Samoa</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr id=an><td class=country><a href=../geos/an.html>Andorra</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the mother must be an Andorran citizen or the father must have been born in Andorra and both parents maintain permanent residence in Andorra<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>25 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ao"><td class=country><a href=../geos/ao.html>Angola</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Angola<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=av><td class=country><a href=../geos/av.html>Anguilla</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ac"><td class=country><a href=../geos/ac.html>Antigua and Barbuda</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=ar><td class=country><a href=../geos/ar.html>Argentina</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>2 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="am"><td class=country><a href=../geos/am.html>Armenia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Armenia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr id=aa><td class=country><a href=../geos/aa.html>Aruba</td><td class=fieldData>
+see the Netherlands<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="at"><td class=country><a href=../geos/at.html>Ashmore and Cartier Islands</td><td class=fieldData>
+see Australia<br />
+</td></tr>
+<tr id=as><td class=country><a href=../geos/as.html>Australia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen or permanent resident of Australia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="au"><td class=country><a href=../geos/au.html>Austria</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Austria<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=aj><td class=country><a href=../geos/aj.html>Azerbaijan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bf"><td class=country><a href=../geos/bf.html>Bahamas, The</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of The Bahamas<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>6-9 years<br />
+</td></tr>
+<tr id=ba><td class=country><a href=../geos/ba.html>Bahrain</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Bahrain<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>25 years; 15 years for Arab nationals<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bg"><td class=country><a href=../geos/bg.html>Bangladesh</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Bangladesh<br />
+<strong>dual citizenship recognized: </strong>yes, but limited to select countries<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=bb><td class=country><a href=../geos/bb.html>Barbados</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bo"><td class=country><a href=../geos/bo.html>Belarus</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Belarus<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=be><td class=country><a href=../geos/be.html>Belgium</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Belgium<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bh"><td class=country><a href=../geos/bh.html>Belize</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=bn><td class=country><a href=../geos/bn.html>Benin</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Benin<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bd"><td class=country><a href=../geos/bd.html>Bermuda</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the UK<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=bt><td class=country><a href=../geos/bt.html>Bhutan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Bhutan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bl"><td class=country><a href=../geos/bl.html>Bolivia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr id=bk><td class=country><a href=../geos/bk.html>Bosnia and Herzegovina</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Bosnia and Herzegovina<br />
+<strong>dual citizenship recognized: </strong>yes, provided there is a bilateral agreement with the other state<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bc"><td class=country><a href=../geos/bc.html>Botswana</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Botswana<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=br><td class=country><a href=../geos/br.html>Brazil</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="vi"><td class=country><a href=../geos/vi.html>British Virgin Islands</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=bx><td class=country><a href=../geos/bx.html>Brunei</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Brunei<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>12 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bu"><td class=country><a href=../geos/bu.html>Bulgaria</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Bulgaria<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=uv><td class=country><a href=../geos/uv.html>Burkina Faso</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Burkina Faso<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bm"><td class=country><a href=../geos/bm.html>Burma</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Burma<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>none<br />
+<strong>note: </strong>an applicant for naturalization must be the child or spouse of a citizen<br />
+</td></tr>
+<tr id=by><td class=country><a href=../geos/by.html>Burundi</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Burundi<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cv"><td class=country><a href=../geos/cv.html>Cabo Verde</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Cabo Verde<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=cb><td class=country><a href=../geos/cb.html>Cambodia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Cambodia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cm"><td class=country><a href=../geos/cm.html>Cameroon</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Cameroon<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=ca><td class=country><a href=../geos/ca.html>Canada</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cj"><td class=country><a href=../geos/cj.html>Cayman Islands</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=ct><td class=country><a href=../geos/ct.html>Central African Republic</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>least one parent must be a citizen of the Central African Republic<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>35 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cd"><td class=country><a href=../geos/cd.html>Chad</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Chad<br />
+<strong>dual citizenship recognized: </strong>Chadian law does not address dual citizenship<br />
+<strong>residency requirement for naturalization: </strong>15 years<br />
+</td></tr>
+<tr id=ci><td class=country><a href=../geos/ci.html>Chile</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ch"><td class=country><a href=../geos/ch.html>China</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>least one parent must be a citizen of China<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>while naturalization is theoretically possible, in practical terms it is extremely difficult; residency is required but not specified<br />
+</td></tr>
+<tr id=kt><td class=country><a href=../geos/kt.html>Christmas Island</td><td class=fieldData>
+see Australia<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ck"><td class=country><a href=../geos/ck.html>Cocos (Keeling) Islands</td><td class=fieldData>
+see Australia<br />
+</td></tr>
+<tr id=co><td class=country><a href=../geos/co.html>Colombia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>least one parent must be a citizen or permanent resident of Colombia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cn"><td class=country><a href=../geos/cn.html>Comoros</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Comoros<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=cg><td class=country><a href=../geos/cg.html>Congo, Democratic Republic of the</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Democratic Republic of the Congo<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cf"><td class=country><a href=../geos/cf.html>Congo, Republic of the</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Republic of the Congo<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=cr><td class=country><a href=../geos/cr.html>Coral Sea Islands</td><td class=fieldData>
+see Australia<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cs"><td class=country><a href=../geos/cs.html>Costa Rica</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=iv><td class=country><a href=../geos/iv.html>Cote d'Ivoire</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Cote d'Ivoire<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="hr"><td class=country><a href=../geos/hr.html>Croatia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Croatia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=cu><td class=country><a href=../geos/cu.html>Cuba</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="cc"><td class=country><a href=../geos/cc.html>Curacao</td><td class=fieldData>
+see the Netherlands<br />
+</td></tr>
+<tr id=cy><td class=country><a href=../geos/cy.html>Cyprus</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Cyprus<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ez"><td class=country><a href=../geos/ez.html>Czechia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Czechia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=da><td class=country><a href=../geos/da.html>Denmark</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Denmark<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="dj"><td class=country><a href=../geos/dj.html>Djibouti</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the mother must be a citizen of Djibouti<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=do><td class=country><a href=../geos/do.html>Dominica</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="dr"><td class=country><a href=../geos/dr.html>Dominican Republic</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Dominican Republic<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>2 years<br />
+</td></tr>
+<tr id=ec><td class=country><a href=../geos/ec.html>Ecuador</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="eg"><td class=country><a href=../geos/eg.html>Egypt</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>if the father was born in Egypt<br />
+<strong>dual citizenship recognized: </strong>only with prior permission from the government<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=es><td class=country><a href=../geos/es.html>El Salvador</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ek"><td class=country><a href=../geos/ek.html>Equatorial Guinea</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Equatorial Guinea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=er><td class=country><a href=../geos/er.html>Eritrea</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Eritrea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>20 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="en"><td class=country><a href=../geos/en.html>Estonia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Estonia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=et><td class=country><a href=../geos/et.html>Ethiopia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Ethiopia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>4 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="fk"><td class=country><a href=../geos/fk.html>Falkland Islands (Islas Malvinas)</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=fo><td class=country><a href=../geos/fo.html>Faroe Islands</td><td class=fieldData>
+see Denmark<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="fj"><td class=country><a href=../geos/fj.html>Fiji</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Fiji<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=fi><td class=country><a href=../geos/fi.html>Finland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Finland<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>6 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="fr"><td class=country><a href=../geos/fr.html>France</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of France<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=fp><td class=country><a href=../geos/fp.html>French Polynesia</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="fs"><td class=country><a href=../geos/fs.html>French Southern and Antarctic Lands</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr id=gb><td class=country><a href=../geos/gb.html>Gabon</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Gabon<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ga"><td class=country><a href=../geos/ga.html>Gambia, The</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=gg><td class=country><a href=../geos/gg.html>Georgia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Georgia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gm"><td class=country><a href=../geos/gm.html>Germany</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a German citizen or a resident alien who has lived in Germany at least 8 years<br />
+<strong>dual citizenship recognized: </strong>yes, but requires prior permission from government<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr id=gh><td class=country><a href=../geos/gh.html>Ghana</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent or grandparent must be a citizen of Ghana<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gi"><td class=country><a href=../geos/gi.html>Gibraltar</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=gr><td class=country><a href=../geos/gr.html>Greece</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Greece<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gl"><td class=country><a href=../geos/gl.html>Greenland</td><td class=fieldData>
+see Denmark<br />
+</td></tr>
+<tr id=gj><td class=country><a href=../geos/gj.html>Grenada</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years for persons from a non-Caribbean state and 4 years for a person from a Caribbean state<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gq"><td class=country><a href=../geos/gq.html>Guam</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr id=gt><td class=country><a href=../geos/gt.html>Guatemala</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years with no absences of six consecutive months or longer or absences totaling more than a year<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gk"><td class=country><a href=../geos/gk.html>Guernsey</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=pu><td class=country><a href=../geos/pu.html>Guinea-Bissau</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gv"><td class=country><a href=../geos/gv.html>Guinea</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Guinea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>na<br />
+</td></tr>
+<tr id=gy><td class=country><a href=../geos/gy.html>Guyana</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>na<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ha"><td class=country><a href=../geos/ha.html>Haiti</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a native-born citizen of Haiti<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=vt><td class=country><a href=../geos/vt.html>Holy See (Vatican City)</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent: </strong>no<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>not applicable<br />
+<strong>note: </strong>in the Holy See, citizenship is acquired by law, ex iure, or by adminstrative decision; in the first instance, citizenship is a function of holding office within the Holy See as in the case of cardinals resident in Vatican City or diplomats of the Holy See; in the second instance, citizenship may be requested in a limited set of circumstances for those who reside within Vatican City under papal authorization, as a function of their office or service, or as the spouses and children of current citizens; citizenship is lost once an individual no longer permanently resides in Vatican City, normally reverting to the citizenship previously held<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ho"><td class=country><a href=../geos/ho.html>Honduras</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>1 to 3 years<br />
+</td></tr>
+<tr id=hk><td class=country><a href=../geos/hk.html>Hong Kong</td><td class=fieldData>
+see China<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="hu"><td class=country><a href=../geos/hu.html>Hungary</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Hungary<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr id=ic><td class=country><a href=../geos/ic.html>Iceland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Iceland<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 to 7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="in"><td class=country><a href=../geos/in.html>India</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of India<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=id><td class=country><a href=../geos/id.html>Indonesia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Indonesia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 continuous years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ir"><td class=country><a href=../geos/ir.html>Iran</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Iran<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=iz><td class=country><a href=../geos/iz.html>Iraq</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Iraq<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ei"><td class=country><a href=../geos/ei.html>Ireland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 of the previous 8 years<br />
+</td></tr>
+<tr id=im><td class=country><a href=../geos/im.html>Isle of Man</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="is"><td class=country><a href=../geos/is.html>Israel</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Israel<br />
+<strong>dual citizenship recognized: </strong>yes, but naturalized citizens are not allowed to maintain dual citizenship<br />
+<strong>residency requirement for naturalization: </strong>3 out of the 5 years preceding the application for naturalization<br />
+<strong>note: </strong>Israeli law (Law of Return, 5 July 1950) provides for the granting of citizenship to any Jew - defined as a person being born to a Jewish mother or having converted to Judaism while renouncing any other religion - who immigrates to and expresses a desire to settle in Israel on the basis of the Right of aliyah; the 1970 amendment of this act extended the right to family members including the spouse of a Jew, any child or grandchild, and the spouses of children and grandchildren<br />
+</td></tr>
+<tr id=it><td class=country><a href=../geos/it.html>Italy</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Italy<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 years for EU nationals, 5 years for refugees and specified exceptions, 10 years for all others<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="jm"><td class=country><a href=../geos/jm.html>Jamaica</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 out of the previous 5 years<br />
+</td></tr>
+<tr id=ja><td class=country><a href=../geos/ja.html>Japan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Japan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="je"><td class=country><a href=../geos/je.html>Jersey</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=jo><td class=country><a href=../geos/jo.html>Jordan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Jordan<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>15 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="kz"><td class=country><a href=../geos/kz.html>Kazakhstan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Kazakhstan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=ke><td class=country><a href=../geos/ke.html>Kenya</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Kenya<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>4 out of the previous 7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="kr"><td class=country><a href=../geos/kr.html>Kiribati</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a native-born citizen of Kiribati<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=kn><td class=country><a href=../geos/kn.html>Korea, North</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of North Korea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ks"><td class=country><a href=../geos/ks.html>Korea, South</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of South Korea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=kv><td class=country><a href=../geos/kv.html>Kosovo</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Kosovo<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ku"><td class=country><a href=../geos/ku.html>Kuwait</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Kuwait<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>not specified<br />
+</td></tr>
+<tr id=kg><td class=country><a href=../geos/kg.html>Kyrgyzstan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Kyrgyzstan<br />
+<strong>dual citizenship recognized: </strong>yes, but only if a mutual treaty on dual citizenship is in force<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="la"><td class=country><a href=../geos/la.html>Laos</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Laos<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=lg><td class=country><a href=../geos/lg.html>Latvia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Latvia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="le"><td class=country><a href=../geos/le.html>Lebanon</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Lebanon<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr id=lt><td class=country><a href=../geos/lt.html>Lesotho</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="li"><td class=country><a href=../geos/li.html>Liberia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Liberia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>2 years<br />
+</td></tr>
+<tr id=ly><td class=country><a href=../geos/ly.html>Libya</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent or grandparent must be a citizen of Libya<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>varies from 3 to 5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ls"><td class=country><a href=../geos/ls.html>Liechtenstein</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Liechtenstein; in the case of a child born out of wedlock, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=lh><td class=country><a href=../geos/lh.html>Lithuania</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Lithuania<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="lu"><td class=country><a href=../geos/lu.html>Luxembourg</td><td class=fieldData>
+<strong>citizenship by birth: </strong>limited to situations where the parents are either unknown, stateless, or when the nationality law of the parents' state of origin does not permit acquisition of citizenship by descent when the birth occurs outside of national territory<br />
+<strong>citizenship by descent: </strong>at least one parent must be a citizen of Luxembourg<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=mc><td class=country><a href=../geos/mc.html>Macau</td><td class=fieldData>
+see China<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mk"><td class=country><a href=../geos/mk.html>Macedonia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Macedonia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr id=ma><td class=country><a href=../geos/ma.html>Madagascar</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Madagascar; in the case of a child born out of wedlock, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mi"><td class=country><a href=../geos/mi.html>Malawi</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Malawi<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=my><td class=country><a href=../geos/my.html>Malaysia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Malaysia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 out 12 years preceding application<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mv"><td class=country><a href=../geos/mv.html>Maldives</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Maldives<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr id=ml><td class=country><a href=../geos/ml.html>Mali</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Mali<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mt"><td class=country><a href=../geos/mt.html>Malta</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Malta<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=rm><td class=country><a href=../geos/rm.html>Marshall Islands</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Marshall Islands<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mr"><td class=country><a href=../geos/mr.html>Mauritania</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Mauritania<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=mp><td class=country><a href=../geos/mp.html>Mauritius</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 out of the previous 7 years including the last 12 months<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mx"><td class=country><a href=../geos/mx.html>Mexico</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>not specified<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=fm><td class=country><a href=../geos/fm.html>Micronesia, Federated States of</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of FSM<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mq"><td class=country><a href=../geos/mq.html>Midway Islands</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr id=md><td class=country><a href=../geos/md.html>Moldova</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Moldova<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mn"><td class=country><a href=../geos/mn.html>Monaco</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Monaco; in the case of a child born out of wedlock, the mother must be a citizen and father unknown<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=mg><td class=country><a href=../geos/mg.html>Mongolia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Mongolia; one parent if born within Mongolia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mj"><td class=country><a href=../geos/mj.html>Montenegro</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Montenegro<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=mh><td class=country><a href=../geos/mh.html>Montserrat</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="mo"><td class=country><a href=../geos/mo.html>Morocco</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Morocco; if the father is unknown or stateless, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=mz><td class=country><a href=../geos/mz.html>Mozambique</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Mozambique<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="wa"><td class=country><a href=../geos/wa.html>Namibia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Namibia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=np><td class=country><a href=../geos/np.html>Nepal</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>15 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="nl"><td class=country><a href=../geos/nl.html>Netherlands</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Netherlands<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=nc><td class=country><a href=../geos/nc.html>New Caledonia</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="nz"><td class=country><a href=../geos/nz.html>New Zealand</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of New Zealand<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr id=nu><td class=country><a href=../geos/nu.html>Nicaragua</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no, except in cases where bilateral agreements exist<br />
+<strong>residency requirement for naturalization: </strong>4 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ni"><td class=country><a href=../geos/ni.html>Nigeria</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Nigeria<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>15 years<br />
+</td></tr>
+<tr id=ng><td class=country><a href=../geos/ng.html>Niger</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Niger<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="nf"><td class=country><a href=../geos/nf.html>Norfolk Island</td><td class=fieldData>
+see Australia<br />
+</td></tr>
+<tr id=cq><td class=country><a href=../geos/cq.html>Northern Mariana Islands</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="no"><td class=country><a href=../geos/no.html>Norway</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Norway<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=mu><td class=country><a href=../geos/mu.html>Oman</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Oman<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>unknown<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="pk"><td class=country><a href=../geos/pk.html>Pakistan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>at least one parent must be a citizen of Pakistan<br />
+<strong>dual citizenship recognized: </strong>yes, but limited to select countries<br />
+<strong>residency requirement for naturalization: </strong>4 out of the previous 7 years and including the 12 months preceding application<br />
+</td></tr>
+<tr id=ps><td class=country><a href=../geos/ps.html>Palau</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Palau<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>note - no procedure for naturalization<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="pm"><td class=country><a href=../geos/pm.html>Panama</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=pp><td class=country><a href=../geos/pp.html>Papua New Guinea</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Papua New Guinea<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="pa"><td class=country><a href=../geos/pa.html>Paraguay</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>at least one parent must be a native-born citizen of Paraguay<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr id=pe><td class=country><a href=../geos/pe.html>Peru</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>2 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="rp"><td class=country><a href=../geos/rp.html>Philippines</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Philippines<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=pc><td class=country><a href=../geos/pc.html>Pitcairn Islands</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="pl"><td class=country><a href=../geos/pl.html>Poland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Poland<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=po><td class=country><a href=../geos/po.html>Portugal</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Portugal<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years; 6 years if from a Portuguese-speaking country<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="rq"><td class=country><a href=../geos/rq.html>Puerto Rico</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr id=qa><td class=country><a href=../geos/qa.html>Qatar</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Qatar<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>20 years; 15 years if an Arab national<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ro"><td class=country><a href=../geos/ro.html>Romania</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Romania<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=rs><td class=country><a href=../geos/rs.html>Russia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Russia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3-5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="rw"><td class=country><a href=../geos/rw.html>Rwanda</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Rwanda; if the father is stateless or unknown, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=tb><td class=country><a href=../geos/tb.html>Saint Barthelemy</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sh"><td class=country><a href=../geos/sh.html>Saint Helena, Ascension, and Tristan da Cunha</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr id=sc><td class=country><a href=../geos/sc.html>Saint Kitts and Nevis</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>14 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="st"><td class=country><a href=../geos/st.html>Saint Lucia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>at least one parent must be a citizen of Saint Lucia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr id=rn><td class=country><a href=../geos/rn.html>Saint Martin</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sb"><td class=country><a href=../geos/sb.html>Saint Pierre and Miquelon</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr id=vc><td class=country><a href=../geos/vc.html>Saint Vincent and the Grenadines</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>at least one parent must be a citizen of Saint Vincent and the Grenadines<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ws"><td class=country><a href=../geos/ws.html>Samoa</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Samoa<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=sm><td class=country><a href=../geos/sm.html>San Marino</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of San Marino<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>30 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="tp"><td class=country><a href=../geos/tp.html>Sao Tome and Principe</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Sao Tome and Principe<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=sa><td class=country><a href=../geos/sa.html>Saudi Arabia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Saudi Arabia; a child born out of wedlock in Saudi Arabia to a Saudi mother and unknown father<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sg"><td class=country><a href=../geos/sg.html>Senegal</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Senegal<br />
+<strong>dual citizenship recognized: </strong>no, but Senegalese citizens do not automatically lose their citizenship if they acquire citizenship in another state<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=ri><td class=country><a href=../geos/ri.html>Serbia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Serbia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="se"><td class=country><a href=../geos/se.html>Seychelles</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Seychelles<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=sl><td class=country><a href=../geos/sl.html>Sierra Leone</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent or grandparent must be a citizen of Sierra Leone<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sn"><td class=country><a href=../geos/sn.html>Singapore</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Singapore<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=sk><td class=country><a href=../geos/sk.html>Sint Maarten</td><td class=fieldData>
+see the Netherlands<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="lo"><td class=country><a href=../geos/lo.html>Slovakia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Slovakia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=si><td class=country><a href=../geos/si.html>Slovenia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Slovenia; both parents if the child is born outside of Slovenia<br />
+<strong>dual citizenship recognized: </strong>yes, for select cases<br />
+<strong>residency requirement for naturalization: </strong>10 years, the last 5 of which have been continuous<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="bp"><td class=country><a href=../geos/bp.html>Solomon Islands</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the Solomon Islands<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=so><td class=country><a href=../geos/so.html>Somalia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Somalia<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sf"><td class=country><a href=../geos/sf.html>South Africa</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of South Africa<br />
+<strong>dual citizenship recognized: </strong>yes, but requires prior permission of the government<br />
+<strong>residency requirement for naturalization: </strong>1 year<br />
+</td></tr>
+<tr id=od><td class=country><a href=../geos/od.html>South Sudan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of South Sudan<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sp"><td class=country><a href=../geos/sp.html>Spain</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Spain<br />
+<strong>dual citizenship recognized: </strong>only with select Latin American countries<br />
+<strong>residency requirement for naturalization: </strong>10 years for persons with no ties to Spain<br />
+</td></tr>
+<tr id=ce><td class=country><a href=../geos/ce.html>Sri Lanka</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Sri Lanka<br />
+<strong>dual citizenship recognized: </strong>no, except in cases where the government rules it is to the benefit of Sri Lanka<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="su"><td class=country><a href=../geos/su.html>Sudan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Sudan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=ns><td class=country><a href=../geos/ns.html>Suriname</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Suriname<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sv"><td class=country><a href=../geos/sv.html>Svalbard</td><td class=fieldData>
+see Norway<br />
+</td></tr>
+<tr id=wz><td class=country><a href=../geos/wz.html>Swaziland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Swaziland<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sw"><td class=country><a href=../geos/sw.html>Sweden</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Sweden; in the case of a child born out of wedlock, the mother must be a citizen of Sweden and the father unknown<br />
+<strong>dual citizenship recognized: </strong>no, unless the other citizenship was acquired involuntarily<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=sz><td class=country><a href=../geos/sz.html>Switzerland</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Switzerland<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>12 years including at least 3 of the last 5 years prior to application<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sy"><td class=country><a href=../geos/sy.html>Syria</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Syria; if the father is unknown or stateless, the mother must be a citizen of Syria<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=tw><td class=country><a href=../geos/tw.html>Taiwan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Taiwan<br />
+<strong>dual citizenship recognized: </strong>yes, except that citizens of Taiwan are not recognized as dual citizens of the People's Republic of China<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ti"><td class=country><a href=../geos/ti.html>Tajikistan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Tajikistan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years or 3 years of continuous residence prior to application<br />
+</td></tr>
+<tr id=tz><td class=country><a href=../geos/tz.html>Tanzania</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Tanzania; if a child is born abroad, the father must be a citizen of Tanzania<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="th"><td class=country><a href=../geos/th.html>Thailand</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Thailand<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=tt><td class=country><a href=../geos/tt.html>Timor-Leste</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Timor-Leste<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="to"><td class=country><a href=../geos/to.html>Togo</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Togo<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=tl><td class=country><a href=../geos/tl.html>Tokelau</td><td class=fieldData>
+see New Zealand<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="tn"><td class=country><a href=../geos/tn.html>Tonga</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Tonga; if a child is born out of wedlock, the mother must be a citizen of Tonga<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=td><td class=country><a href=../geos/td.html>Trinidad and Tobago</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>8 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ts"><td class=country><a href=../geos/ts.html>Tunisia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Tunisia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=tu><td class=country><a href=../geos/tu.html>Turkey</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Turkey<br />
+<strong>dual citizenship recognized: </strong>yes, but requires prior permission from the government<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="tx"><td class=country><a href=../geos/tx.html>Turkmenistan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Turkmenistan<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>7 years<br />
+</td></tr>
+<tr id=tk><td class=country><a href=../geos/tk.html>Turks and Caicos Islands</td><td class=fieldData>
+see United Kingdom<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="tv"><td class=country><a href=../geos/tv.html>Tuvalu</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes; for a child born abroad, at least one parent must be a citizen of Tuvalu<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>na<br />
+</td></tr>
+<tr id=ug><td class=country><a href=../geos/ug.html>Uganda</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent or grandparent must be a native-born citizen of Uganda<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>an aggregate of 20 years and continuously for the last 2 years prior to applying for citizenship<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="up"><td class=country><a href=../geos/up.html>Ukraine</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Ukraine<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=ae><td class=country><a href=../geos/ae.html>United Arab Emirates</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of the United Arab Emirates; if the father is unknown, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>30 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="uk"><td class=country><a href=../geos/uk.html>United Kingdom</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of the United Kingdom<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=us><td class=country><a href=../geos/us.html>United States</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no, but the US government acknowledges such situtations exist; US citizens are not encouraged to seek dual citizenship since it limits protection by the US<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="uy"><td class=country><a href=../geos/uy.html>Uruguay</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>3-5 years<br />
+</td></tr>
+<tr id=uz><td class=country><a href=../geos/uz.html>Uzbekistan</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Uzbekistan<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="nh"><td class=country><a href=../geos/nh.html>Vanuatu</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>both parents must be citizens of Vanuatu; in the case of only one parent, it must be the father who is a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=ve><td class=country><a href=../geos/ve.html>Venezuela</td><td class=fieldData>
+<strong>citizenship by birth: </strong>yes<br />
+<strong>citizenship by descent: </strong>yes<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="vm"><td class=country><a href=../geos/vm.html>Vietnam</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>at least one parent must be a citizen of Vietnam<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+<tr id=vq><td class=country><a href=../geos/vq.html>Virgin Islands</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="wq"><td class=country><a href=../geos/wq.html>Wake Island</td><td class=fieldData>
+see United States<br />
+</td></tr>
+<tr id=wf><td class=country><a href=../geos/wf.html>Wallis and Futuna</td><td class=fieldData>
+see France<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ym"><td class=country><a href=../geos/ym.html>Yemen</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Yemen; if the father is unknown, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>10 years<br />
+</td></tr>
+<tr id=za><td class=country><a href=../geos/za.html>Zambia</td><td class=fieldData>
+<strong>citizenship by birth: </strong>only if at least one parent is a citizen of Zambia<br />
+<strong>citizenship by descent: </strong>yes, if at least one parent was a citizen of Zambia<br />
+<strong>dual citizenship recognized: </strong>yes<br />
+<strong>residency requirement for naturalization: </strong>5 years for those with an ancestor who was a citizen of Zambia, otherwise 10 years residency is required<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="zi"><td class=country><a href=../geos/zi.html>Zimbabwe</td><td class=fieldData>
+<strong>citizenship by birth: </strong>no<br />
+<strong>citizenship by descent only: </strong>the father must be a citizen of Zimbabwe; in the case of a child born out of wedlock, the mother must be a citizen<br />
+<strong>dual citizenship recognized: </strong>no<br />
+<strong>residency requirement for naturalization: </strong>5 years<br />
+</td></tr>
+   </tbody>
+            </table>
+           </body>
+         </html>

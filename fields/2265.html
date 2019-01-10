@@ -1,15 +1,9 @@
 <!doctype html>
-
-
-
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> 
  <!--<![endif]-->
- 
-
-
 <html class="no-js" lang="en"><!-- InstanceBegin template="/Templates/wfbext_template.dwt.cfm" codeOutsideHTMLIsLocked="false" -->
 <head>
 
@@ -33,9 +27,10 @@
   <link rel="stylesheet" type="text/css" href="../styles/jquery.ui.core.css">
   <link rel="stylesheet" type="text/css" href="../styles/jquery.qtip.css">
   <link rel="stylesheet" type="text/css" href="../styles/listnav.css"/> 
-  <link rel="stylesheet" type="text/css" href="../styles/navigation.css">
-  <link rel="stylesheet" type="text/css" href="../styles/wfb_styles.css">
-  <link rel="stylesheet" type="text/css" href="../scripts/galleria/themes/classic/galleria.classic.css">
+  <link rel="stylesheet" type="text/css" href="../styles/wfb_styles.css"> 
+  <link rel="stylesheet" type="text/css" href="../styles/factbook.css">
+  <link rel="stylesheet" type="text/css" href="../styles/navigation.css">   
+  <link rel="stylesheet" type="text/css" href="../scripts/galleria/themes/classic/galleria.classic.css"> 
   
   
   <script type="text/javascript" src="../scripts/jquery.idTabs.min.js" charset="utf-8"></script>
@@ -50,6 +45,9 @@
   
   <!--[if IE]><script type="text/javascript" src="../js/ie.js"></script><![endif]-->
 <!-- InstanceBeginEditable name="head" -->
+<!-- load Galleria -->
+<link rel="stylesheet" type="text/css" href="../scripts/galleria/themes/classic/galleria.classic.css">
+<script src="../scripts/galleria/galleria-1.2.9.min.js"></script>
 <!-- InstanceEndEditable -->
 </head>
 <body> 
@@ -61,7 +59,7 @@
         <span class="bg-globe"></span>
         <div class="header-panel">
           <hgroup>
-              <h1 class="logo"><a href="/"><img src="../images/logo.png" alt="Central Intelligence Agency"><span>Central Intelligence Agency</span></a></h1>
+              <h1 class="logo"><a href="../index.html"><img src="../images/logo.png" alt="Central Intelligence Agency"><span>Central Intelligence Agency</span></a></h1>
               <h2 class="work-text">The Work Of A Nation. The Center of Intelligence.</h2>
           </hgroup>
           <div class="search-form">
@@ -107,7 +105,7 @@
           <h3 class="visuallyhidden">Navigation</h3>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="../index.html">Home</a>
               <span class="arrow"></span>
             </li>
             <li>
@@ -254,11 +252,9 @@
                    <li>
                      <a href="/library/publications/">Publications</a>
                      <ul>
-                       <li class="mark"><a class="active" href="/library/publications/the-world-factbook/">The World Factbook</a></li>
-                       <li><a href="/library/publications/world-leaders-1/">World Leaders</a></li>
-                       <li><a href="/library/publications/cia-maps-publications/">CIA Maps</a></li>
-                       <li><a href="/library/publications/historical-collection-publications/">Historical Collection Publications</a></li>
-                       <li><a href="/library/publications/additional-publications/">Additional Publications</a></li>
+                       <li class="mark"><a class="active" href="/library/publications/resources/the-world-factbook/">The World Factbook</a></li>
+                       <li><a href="/library/publications/resources/world-leaders-1/">World Leaders</a></li>
+                       <li><a href="/library/publications/resources/cia-maps-publications/">CIA Maps</a></li>
                      </ul>
                    </li>
                     <li><a href="/library/center-for-the-study-of-intelligence/">Center for the Study of Intelligence</a></li>
@@ -273,7 +269,7 @@
              </div>
              <div id="content">
                <ul class="breadcrumbs">
-                 <li><a href="/">Home</a></li>
+                 <li><a href="../index.html">Home</a></li>
                  <li><a href="/library/">Library </a></li>
                  <li><a href="/library/publications/">Publications</a></li>
                  <li>The World Factbook</li>
@@ -282,838 +278,490 @@
                	 <a id="main-content" tabindex="-1">&nbsp;</a>
                  <div class="text-holder-full">
 			  <a name="wfbtop"></a>
-				<div class="text-box" style="width: 770px; float: left;" id="wfb_data">
-				
-					<table width="100%" border="0" cellpadding="0" cellspacing="0" >
-						<tr>
-							<td> 
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 10px;height: 50px;">
-		<tr>
-			
-				<td valign="top"><img src="../graphics/banner_ext2.png" border="0" title="World Factbook Title" width="770"  usemap="#Map" style="padding-bottom: 5px;"/></td>
-				
-		</tr>
-		<tr style="height:2px;">
-			<td></td>
-		</tr>
-	</table>
-	
-
-<map name="Map" id="Map">
-	<area shape="poly" coords="478,17,624,17,615,0,490,0" href="https://www.cia.gov/library/publications/cia-maps-publications/index.html" target="_blank" />
-</map>
-</td> 
-						</tr>
-						<tr>
-							<td align="right" style="padding-top: 5px; padding-bottom: 10px; background-image:url(../graphics/country_gradiant_back.jpg); background-position: top; background-repeat: repeat-x;"> 
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
 
 
-<script>
-  	$(document).ready(function() {
+                <div id="fbHeader">
+                  <div id="fbLogo">
+                    <img title="World Factbook Title" src="../graphics/banner_ext2.png" />
+                  </div>
+                  <div id="cntrySelect">
 
-//		$(".selecter_links").selecter({
-//        	defaultLabel: "Please Select a Country to View",
-//			links: true
-//		});
-		$( ".selecter_links" ).change(function(e) {
-			if (this.form.selecter_links.selectedIndex > 0)	{
-				window.location = this.form.selecter_links.options[this.form.selecter_links.selectedIndex].value;
-			}
-		});
+                 <script>
+                 $(document).ready(function() {
+                 // $(".selecter_links").selecter({
+                 // defaultLabel: "Please Select a Country to View",
+                 // links: true
+                 // });
+                 $( ".selecter_links" ).change(function(e) {
+                 if (this.form.selecter_links.selectedIndex > 0) {
+                 window.location = this.form.selecter_links.options[this.form.selecter_links.selectedIndex].value;
+                 }
+                 });
+                 });
+                 </script>
 
-	});
+
+
+                      <form action="#" method="GET">
+                         <select name="selecter_links" class="selecter_links" onchange="document.location.href= this.value;">
+                             <option value="">Please select a country to view</option>
+                                <option value="../geos/xx.html"> World </option>
+                                <option value="../geos/af.html"> Afghanistan </option>
+                                <option value="../geos/ax.html"> Akrotiri </option>
+                                <option value="../geos/al.html"> Albania </option>
+                                <option value="../geos/ag.html"> Algeria </option>
+                                <option value="../geos/aq.html"> American Samoa </option>
+                                <option value="../geos/an.html"> Andorra </option>
+                                <option value="../geos/ao.html"> Angola </option>
+                                <option value="../geos/av.html"> Anguilla </option>
+                                <option value="../geos/ay.html"> Antarctica </option>
+                                <option value="../geos/ac.html"> Antigua and Barbuda </option>
+                                <option value="../geos/xq.html"> Arctic Ocean </option>
+                                <option value="../geos/ar.html"> Argentina </option>
+                                <option value="../geos/am.html"> Armenia </option>
+                                <option value="../geos/aa.html"> Aruba </option>
+                                <option value="../geos/at.html"> Ashmore and Cartier Islands </option>
+                                <option value="../geos/zh.html"> Atlantic Ocean </option>
+                                <option value="../geos/as.html"> Australia </option>
+                                <option value="../geos/au.html"> Austria </option>
+                                <option value="../geos/aj.html"> Azerbaijan </option>
+                                <option value="../geos/bf.html"> Bahamas, The </option>
+                                <option value="../geos/ba.html"> Bahrain </option>
+                                <option value="../geos/um.html"> Baker Island </option>
+                                <option value="../geos/bg.html"> Bangladesh </option>
+                                <option value="../geos/bb.html"> Barbados </option>
+                                <option value="../geos/bo.html"> Belarus </option>
+                                <option value="../geos/be.html"> Belgium </option>
+                                <option value="../geos/bh.html"> Belize </option>
+                                <option value="../geos/bn.html"> Benin </option>
+                                <option value="../geos/bd.html"> Bermuda </option>
+                                <option value="../geos/bt.html"> Bhutan </option>
+                                <option value="../geos/bl.html"> Bolivia </option>
+                                <option value="../geos/bk.html"> Bosnia and Herzegovina </option>
+                                <option value="../geos/bc.html"> Botswana </option>
+                                <option value="../geos/bv.html"> Bouvet Island </option>
+                                <option value="../geos/br.html"> Brazil </option>
+                                <option value="../geos/io.html"> British Indian Ocean Territory </option>
+                                <option value="../geos/vi.html"> British Virgin Islands </option>
+                                <option value="../geos/bx.html"> Brunei </option>
+                                <option value="../geos/bu.html"> Bulgaria </option>
+                                <option value="../geos/uv.html"> Burkina Faso </option>
+                                <option value="../geos/bm.html"> Burma </option>
+                                <option value="../geos/by.html"> Burundi </option>
+                                <option value="../geos/cv.html"> Cabo Verde </option>
+                                <option value="../geos/cb.html"> Cambodia </option>
+                                <option value="../geos/cm.html"> Cameroon </option>
+                                <option value="../geos/ca.html"> Canada </option>
+                                <option value="../geos/cj.html"> Cayman Islands </option>
+                                <option value="../geos/ct.html"> Central African Republic </option>
+                                <option value="../geos/cd.html"> Chad </option>
+                                <option value="../geos/ci.html"> Chile </option>
+                                <option value="../geos/ch.html"> China </option>
+                                <option value="../geos/kt.html"> Christmas Island </option>
+                                <option value="../geos/ip.html"> Clipperton Island </option>
+                                <option value="../geos/ck.html"> Cocos (Keeling) Islands </option>
+                                <option value="../geos/co.html"> Colombia </option>
+                                <option value="../geos/cn.html"> Comoros </option>
+                                <option value="../geos/cg.html"> Congo, Democratic Republic of the </option>
+                                <option value="../geos/cf.html"> Congo, Republic of the </option>
+                                <option value="../geos/cw.html"> Cook Islands </option>
+                                <option value="../geos/cr.html"> Coral Sea Islands </option>
+                                <option value="../geos/cs.html"> Costa Rica </option>
+                                <option value="../geos/iv.html"> Cote d'Ivoire </option>
+                                <option value="../geos/hr.html"> Croatia </option>
+                                <option value="../geos/cu.html"> Cuba </option>
+                                <option value="../geos/cc.html"> Curacao </option>
+                                <option value="../geos/cy.html"> Cyprus </option>
+                                <option value="../geos/ez.html"> Czech Republic </option>
+                                <option value="../geos/da.html"> Denmark </option>
+                                <option value="../geos/dx.html"> Dhekelia </option>
+                                <option value="../geos/dj.html"> Djibouti </option>
+                                <option value="../geos/do.html"> Dominica </option>
+                                <option value="../geos/dr.html"> Dominican Republic </option>
+                                <option value="../geos/ec.html"> Ecuador </option>
+                                <option value="../geos/eg.html"> Egypt </option>
+                                <option value="../geos/es.html"> El Salvador </option>
+                                <option value="../geos/ek.html"> Equatorial Guinea </option>
+                                <option value="../geos/er.html"> Eritrea </option>
+                                <option value="../geos/en.html"> Estonia </option>
+                                <option value="../geos/et.html"> Ethiopia </option>
+                                <option value="../geos/fk.html"> Falkland Islands (Islas Malvinas) </option>
+                                <option value="../geos/fo.html"> Faroe Islands </option>
+                                <option value="../geos/fj.html"> Fiji </option>
+                                <option value="../geos/fi.html"> Finland </option>
+                                <option value="../geos/fr.html"> France </option>
+                                <option value="../geos/fp.html"> French Polynesia </option>
+                                <option value="../geos/fs.html"> French Southern and Antarctic Lands </option>
+                                <option value="../geos/gb.html"> Gabon </option>
+                                <option value="../geos/ga.html"> Gambia, The </option>
+                                <option value="../geos/gz.html"> Gaza Strip </option>
+                                <option value="../geos/gg.html"> Georgia </option>
+                                <option value="../geos/gm.html"> Germany </option>
+                                <option value="../geos/gh.html"> Ghana </option>
+                                <option value="../geos/gi.html"> Gibraltar </option>
+                                <option value="../geos/gr.html"> Greece </option>
+                                <option value="../geos/gl.html"> Greenland </option>
+                                <option value="../geos/gj.html"> Grenada </option>
+                                <option value="../geos/gq.html"> Guam </option>
+                                <option value="../geos/gt.html"> Guatemala </option>
+                                <option value="../geos/gk.html"> Guernsey </option>
+                                <option value="../geos/gv.html"> Guinea </option>
+                                <option value="../geos/pu.html"> Guinea-Bissau </option>
+                                <option value="../geos/gy.html"> Guyana </option>
+                                <option value="../geos/ha.html"> Haiti </option>
+                                <option value="../geos/hm.html"> Heard Island and McDonald Islands </option>
+                                <option value="../geos/vt.html"> Holy See (Vatican City) </option>
+                                <option value="../geos/ho.html"> Honduras </option>
+                                <option value="../geos/hk.html"> Hong Kong </option>
+                                <option value="../geos/um.html"> Howland Island </option>
+                                <option value="../geos/hu.html"> Hungary </option>
+                                <option value="../geos/ic.html"> Iceland </option>
+                                <option value="../geos/in.html"> India </option>
+                                <option value="../geos/xo.html"> Indian Ocean </option>
+                                <option value="../geos/id.html"> Indonesia </option>
+                                <option value="../geos/ir.html"> Iran </option>
+                                <option value="../geos/iz.html"> Iraq </option>
+                                <option value="../geos/ei.html"> Ireland </option>
+                                <option value="../geos/im.html"> Isle of Man </option>
+                                <option value="../geos/is.html"> Israel </option>
+                                <option value="../geos/it.html"> Italy </option>
+                                <option value="../geos/jm.html"> Jamaica </option>
+                                <option value="../geos/jn.html"> Jan Mayen </option>
+                                <option value="../geos/ja.html"> Japan </option>
+                                <option value="../geos/um.html"> Jarvis Island </option>
+                                <option value="../geos/je.html"> Jersey </option>
+                                <option value="../geos/um.html"> Johnston Atoll </option>
+                                <option value="../geos/jo.html"> Jordan </option>
+                                <option value="../geos/kz.html"> Kazakhstan </option>
+                                <option value="../geos/ke.html"> Kenya </option>
+                                <option value="../geos/um.html"> Kingman Reef </option>
+                                <option value="../geos/kr.html"> Kiribati </option>
+                                <option value="../geos/kn.html"> Korea, North </option>
+                                <option value="../geos/ks.html"> Korea, South </option>
+                                <option value="../geos/kv.html"> Kosovo </option>
+                                <option value="../geos/ku.html"> Kuwait </option>
+                                <option value="../geos/kg.html"> Kyrgyzstan </option>
+                                <option value="../geos/la.html"> Laos </option>
+                                <option value="../geos/lg.html"> Latvia </option>
+                                <option value="../geos/le.html"> Lebanon </option>
+                                <option value="../geos/lt.html"> Lesotho </option>
+                                <option value="../geos/li.html"> Liberia </option>
+                                <option value="../geos/ly.html"> Libya </option>
+                                <option value="../geos/ls.html"> Liechtenstein </option>
+                                <option value="../geos/lh.html"> Lithuania </option>
+                                <option value="../geos/lu.html"> Luxembourg </option>
+                                <option value="../geos/mc.html"> Macau </option>
+                                <option value="../geos/mk.html"> Macedonia </option>
+                                <option value="../geos/ma.html"> Madagascar </option>
+                                <option value="../geos/mi.html"> Malawi </option>
+                                <option value="../geos/my.html"> Malaysia </option>
+                                <option value="../geos/mv.html"> Maldives </option>
+                                <option value="../geos/ml.html"> Mali </option>
+                                <option value="../geos/mt.html"> Malta </option>
+                                <option value="../geos/rm.html"> Marshall Islands </option>
+                                <option value="../geos/mr.html"> Mauritania </option>
+                                <option value="../geos/mp.html"> Mauritius </option>
+                                <option value="../geos/mx.html"> Mexico </option>
+                                <option value="../geos/fm.html"> Micronesia, Federated States of </option>
+                                <option value="../geos/um.html"> Midway Islands </option>
+                                <option value="../geos/md.html"> Moldova </option>
+                                <option value="../geos/mn.html"> Monaco </option>
+                                <option value="../geos/mg.html"> Mongolia </option>
+                                <option value="../geos/mj.html"> Montenegro </option>
+                                <option value="../geos/mh.html"> Montserrat </option>
+                                <option value="../geos/mo.html"> Morocco </option>
+                                <option value="../geos/mz.html"> Mozambique </option>
+                                <option value="../geos/wa.html"> Namibia </option>
+                                <option value="../geos/nr.html"> Nauru </option>
+                                <option value="../geos/bq.html"> Navassa Island </option>
+                                <option value="../geos/np.html"> Nepal </option>
+                                <option value="../geos/nl.html"> Netherlands </option>
+                                <option value="../geos/nc.html"> New Caledonia </option>
+                                <option value="../geos/nz.html"> New Zealand </option>
+                                <option value="../geos/nu.html"> Nicaragua </option>
+                                <option value="../geos/ng.html"> Niger </option>
+                                <option value="../geos/ni.html"> Nigeria </option>
+                                <option value="../geos/ne.html"> Niue </option>
+                                <option value="../geos/nf.html"> Norfolk Island </option>
+                                <option value="../geos/cq.html"> Northern Mariana Islands </option>
+                                <option value="../geos/no.html"> Norway </option>
+                                <option value="../geos/mu.html"> Oman </option>
+                                <option value="../geos/zn.html"> Pacific Ocean </option>
+                                <option value="../geos/pk.html"> Pakistan </option>
+                                <option value="../geos/ps.html"> Palau </option>
+                                <option value="../geos/um.html"> Palmyra Atoll </option>
+                                <option value="../geos/pm.html"> Panama </option>
+                                <option value="../geos/pp.html"> Papua New Guinea </option>
+                                <option value="../geos/pf.html"> Paracel Islands </option>
+                                <option value="../geos/pa.html"> Paraguay </option>
+                                <option value="../geos/pe.html"> Peru </option>
+                                <option value="../geos/rp.html"> Philippines </option>
+                                <option value="../geos/pc.html"> Pitcairn Islands </option>
+                                <option value="../geos/pl.html"> Poland </option>
+                                <option value="../geos/po.html"> Portugal </option>
+                                <option value="../geos/rq.html"> Puerto Rico </option>
+                                <option value="../geos/qa.html"> Qatar </option>
+                                <option value="../geos/ro.html"> Romania </option>
+                                <option value="../geos/rs.html"> Russia </option>
+                                <option value="../geos/rw.html"> Rwanda </option>
+                                <option value="../geos/tb.html"> Saint Barthelemy </option>
+                                <option value="../geos/sh.html"> Saint Helena, Ascension, and Tristan da Cunha </option>
+                                <option value="../geos/sc.html"> Saint Kitts and Nevis </option>
+                                <option value="../geos/st.html"> Saint Lucia </option>
+                                <option value="../geos/rn.html"> Saint Martin </option>
+                                <option value="../geos/sb.html"> Saint Pierre and Miquelon </option>
+                                <option value="../geos/vc.html"> Saint Vincent and the Grenadines </option>
+                                <option value="../geos/ws.html"> Samoa </option>
+                                <option value="../geos/sm.html"> San Marino </option>
+                                <option value="../geos/tp.html"> Sao Tome and Principe </option>
+                                <option value="../geos/sa.html"> Saudi Arabia </option>
+                                <option value="../geos/sg.html"> Senegal </option>
+                                <option value="../geos/ri.html"> Serbia </option>
+                                <option value="../geos/se.html"> Seychelles </option>
+                                <option value="../geos/sl.html"> Sierra Leone </option>
+                                <option value="../geos/sn.html"> Singapore </option>
+                                <option value="../geos/sk.html"> Sint Maarten </option>
+                                <option value="../geos/lo.html"> Slovakia </option>
+                                <option value="../geos/si.html"> Slovenia </option>
+                                <option value="../geos/bp.html"> Solomon Islands </option>
+                                <option value="../geos/so.html"> Somalia </option>
+                                <option value="../geos/sf.html"> South Africa </option>
+                                <option value="../geos/oo.html"> Southern Ocean </option>
+                                <option value="../geos/sx.html"> South Georgia and South Sandwich Islands </option>
+                                <option value="../geos/od.html"> South Sudan </option>
+                                <option value="../geos/sp.html"> Spain </option>
+                                <option value="../geos/pg.html"> Spratly Islands </option>
+                                <option value="../geos/ce.html"> Sri Lanka </option>
+                                <option value="../geos/su.html"> Sudan </option>
+                                <option value="../geos/ns.html"> Suriname </option>
+                                <option value="../geos/sv.html"> Svalbard </option>
+                                <option value="../geos/wz.html"> Swaziland </option>
+                                <option value="../geos/sw.html"> Sweden </option>
+                                <option value="../geos/sz.html"> Switzerland </option>
+                                <option value="../geos/sy.html"> Syria </option>
+                                <option value="../geos/tw.html"> Taiwan </option>
+                                <option value="../geos/ti.html"> Tajikistan </option>
+                                <option value="../geos/tz.html"> Tanzania </option>
+                                <option value="../geos/th.html"> Thailand </option>
+                                <option value="../geos/tt.html"> Timor-Leste </option>
+                                <option value="../geos/to.html"> Togo </option>
+                                <option value="../geos/tl.html"> Tokelau </option>
+                                <option value="../geos/tn.html"> Tonga </option>
+                                <option value="../geos/td.html"> Trinidad and Tobago </option>
+                                <option value="../geos/ts.html"> Tunisia </option>
+                                <option value="../geos/tu.html"> Turkey </option>
+                                <option value="../geos/tx.html"> Turkmenistan </option>
+                                <option value="../geos/tk.html"> Turks and Caicos Islands </option>
+                                <option value="../geos/tv.html"> Tuvalu </option>
+                                <option value="../geos/ug.html"> Uganda </option>
+                                <option value="../geos/up.html"> Ukraine </option>
+                                <option value="../geos/ae.html"> United Arab Emirates </option>
+                                <option value="../geos/uk.html"> United Kingdom </option>
+                                <option value="../geos/us.html"> United States </option>
+                                <option value="../geos/um.html"> United States Pacific Island Wildlife Refuges </option>
+                                <option value="../geos/uy.html"> Uruguay </option>
+                                <option value="../geos/uz.html"> Uzbekistan </option>
+                                <option value="../geos/nh.html"> Vanuatu </option>
+                                <option value="../geos/ve.html"> Venezuela </option>
+                                <option value="../geos/vm.html"> Vietnam </option>
+                                <option value="../geos/vq.html"> Virgin Islands </option>
+                                <option value="../geos/wq.html"> Wake Island </option>
+                                <option value="../geos/wf.html"> Wallis and Futuna </option>
+                                <option value="../geos/we.html"> West Bank </option>
+                                <option value="../geos/wi.html"> Western Sahara </option>
+                                <option value="../geos/ym.html"> Yemen </option>
+                                <option value="../geos/za.html"> Zambia </option>
+                                <option value="../geos/zi.html"> Zimbabwe </option>
+                                <option value="../geos/ee.html"> European Union </option>
+                             </select>
+                          </form>
+                </div>  <!-- cntrySelect -->
+
+
+
+                        <div id="fbnav">  
+                        <div id="fbNavBox">
+                         <script type="text/javascript">
+                         var timeout         = 500;
+                         var closetimer          = 0;
+                         var ddmenuitem      = 0;
+
+                         function wfbNav_open()
+                         {       wfbNav_canceltimer();
+                                 wfbNav_close();
+                                 ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
+
+                         function wfbNav_close()
+                         {       if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+                         function wfbNav_timer()
+                         {       closetimer = window.setTimeout(wfbNav_close, timeout);}
+
+                         function wfbNav_canceltimer()
+                         {       if(closetimer)
+                                 {       window.clearTimeout(closetimer);
+                                         closetimer = null;}}
+
+
+                         $(document).ready(function()
+                         {       $('#wfbNav > li').bind('mouseover', wfbNav_open);
+                                 $('#wfbNav > li').bind('mouseout',  wfbNav_timer);});
+
+
+                         document.onclick = wfbNav_close;
+                         </script>
+
+                                <ul id="wfbNav" style="z-index: 9999;">
+                                        <li style="border-bottom: 2px solid #CCCCCC; "><a href="../index.html" style="width:20px; height: 12px;" title="The World Factbook Home"><img src="../graphics/home_on.png" border="0" /></a></li>
+                                        <li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);" style="width:65px;" title="About">ABOUT</a>
+                                                <ul class="sub_menu">
+                                                        <li><a href="../docs/history.html">History</a></li>
+                                                        <li><a href="../docs/contributor_copyright.html">Copyright and Contributors</a></li>
+                                                        <li><a href="../docs/purchase_info.html">Purchasing</a></li>
+                                                        <li><a href="../docs/didyouknow.html">Did You Know?</a></li>
+
+                                                </ul>
+                                        </li>
+                                        <li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);" style="width:95px;" title="References">REFERENCES</a>
+                                                <ul class="sub_menu">
+                                                       <li><a href="../docs/refmaps.html">Regional and World Maps</a></li>
+                                                        <li><a href="../docs/flagsoftheworld.html">Flags of the World</a></li>
+                                                        <li><a href="../docs/gallery.html">Gallery of Covers</a></li>
+                                                        <li><a href="../docs/notesanddefs.html">Definitions and Notes</a></li>
+                                                        <li><a href="../docs/profileguide.html">Guide to Country Profiles</a></li>
+                                                        <li><a href="../rankorder/rankorderguide.html">Guide to Country Comparisons</a></li>
+
+                                                        <li><a href="../docs/guidetowfbook.html">The World Factbook Users Guide</a></li>
+                                                </ul>
+                                        </li>
+                                        <li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);" title="Appendices">APPENDICES</a>
+                                                <ul class="sub_menu">
+                                                        <li><a href="../appendix/appendix-a.html">A: abbreviations</a></li>
+                                                        <li><a href="../appendix/appendix-b.html">B: international organizations and groups</a></li>
+                                                        <li><a href="../appendix/appendix-c.html">C: selected international environmental agreements</a></li>
+                                                        <li><a href="../appendix/appendix-d.html">D: cross-reference list of country data codes</a></li>
+                                                        <li><a href="../appendix/appendix-e.html">E: cross-reference list of hydrographic data codes</a></li>
+                                                        <li><a href="../appendix/appendix-f.html">F: cross-reference list of geographic names</a></li>
+                                                        <li><a href="../appendix/appendix-g.html">G: weights and measures</a></li>
+                                                </ul>
+                                        </li>
+                                        <li id="faqs" style="border-bottom: 2px solid #CCCCCC; "><a href="../docs/faqs.html" style="cursor:pointer;width:50px;">FAQ<span style="text-transform:lowercase;">s</span></a></li>
+
+                                        <li id="contact" style="border-bottom: 2px solid #CCCCCC; "> <a href="/contact-cia/index.html" title="Contact" style="cursor:pointer;width:73px;"> CONTACT </a> </li>
+
+                                </ul>
+                             </div>   <!-- fbnavbox -->
+<!--                     <div class="smalltext_nav">  -->
+
   
-</script>
-<div class="option_table_wrapper">
-	<form action="#" method="GET">
-		<select name="selecter_links" class="selecter_links">
-		<option value="">Please select a country to view</option>
-		
-				<option value="../geos/xx.html"> World </option>
-			
-				<option value="../geos/af.html"> Afghanistan </option>
-			
-				<option value="../geos/ax.html"> Akrotiri </option>
-			
-				<option value="../geos/al.html"> Albania </option>
-			
-				<option value="../geos/ag.html"> Algeria </option>
-			
-				<option value="../geos/aq.html"> American Samoa </option>
-			
-				<option value="../geos/an.html"> Andorra </option>
-			
-				<option value="../geos/ao.html"> Angola </option>
-			
-				<option value="../geos/av.html"> Anguilla </option>
-			
-				<option value="../geos/ay.html"> Antarctica </option>
-			
-				<option value="../geos/ac.html"> Antigua and Barbuda </option>
-			
-				<option value="../geos/xq.html"> Arctic Ocean </option>
-			
-				<option value="../geos/ar.html"> Argentina </option>
-			
-				<option value="../geos/am.html"> Armenia </option>
-			
-				<option value="../geos/aa.html"> Aruba </option>
-			
-				<option value="../geos/at.html"> Ashmore and Cartier Islands </option>
-			
-				<option value="../geos/zh.html"> Atlantic Ocean </option>
-			
-				<option value="../geos/as.html"> Australia </option>
-			
-				<option value="../geos/au.html"> Austria </option>
-			
-				<option value="../geos/aj.html"> Azerbaijan </option>
-			
-				<option value="../geos/bf.html"> Bahamas, The </option>
-			
-				<option value="../geos/ba.html"> Bahrain </option>
-			
-				<option value="../geos/um.html"> Baker Island </option>
-			
-				<option value="../geos/bg.html"> Bangladesh </option>
-			
-				<option value="../geos/bb.html"> Barbados </option>
-			
-				<option value="../geos/bo.html"> Belarus </option>
-			
-				<option value="../geos/be.html"> Belgium </option>
-			
-				<option value="../geos/bh.html"> Belize </option>
-			
-				<option value="../geos/bn.html"> Benin </option>
-			
-				<option value="../geos/bd.html"> Bermuda </option>
-			
-				<option value="../geos/bt.html"> Bhutan </option>
-			
-				<option value="../geos/bl.html"> Bolivia </option>
-			
-				<option value="../geos/bk.html"> Bosnia and Herzegovina </option>
-			
-				<option value="../geos/bc.html"> Botswana </option>
-			
-				<option value="../geos/bv.html"> Bouvet Island </option>
-			
-				<option value="../geos/br.html"> Brazil </option>
-			
-				<option value="../geos/io.html"> British Indian Ocean Territory </option>
-			
-				<option value="../geos/vi.html"> British Virgin Islands </option>
-			
-				<option value="../geos/bx.html"> Brunei </option>
-			
-				<option value="../geos/bu.html"> Bulgaria </option>
-			
-				<option value="../geos/uv.html"> Burkina Faso </option>
-			
-				<option value="../geos/bm.html"> Burma </option>
-			
-				<option value="../geos/by.html"> Burundi </option>
-			
-				<option value="../geos/cv.html"> Cabo Verde </option>
-			
-				<option value="../geos/cb.html"> Cambodia </option>
-			
-				<option value="../geos/cm.html"> Cameroon </option>
-			
-				<option value="../geos/ca.html"> Canada </option>
-			
-				<option value="../geos/cj.html"> Cayman Islands </option>
-			
-				<option value="../geos/ct.html"> Central African Republic </option>
-			
-				<option value="../geos/cd.html"> Chad </option>
-			
-				<option value="../geos/ci.html"> Chile </option>
-			
-				<option value="../geos/ch.html"> China </option>
-			
-				<option value="../geos/kt.html"> Christmas Island </option>
-			
-				<option value="../geos/ip.html"> Clipperton Island </option>
-			
-				<option value="../geos/ck.html"> Cocos (Keeling) Islands </option>
-			
-				<option value="../geos/co.html"> Colombia </option>
-			
-				<option value="../geos/cn.html"> Comoros </option>
-			
-				<option value="../geos/cg.html"> Congo, Democratic Republic of the </option>
-			
-				<option value="../geos/cf.html"> Congo, Republic of the </option>
-			
-				<option value="../geos/cw.html"> Cook Islands </option>
-			
-				<option value="../geos/cr.html"> Coral Sea Islands </option>
-			
-				<option value="../geos/cs.html"> Costa Rica </option>
-			
-				<option value="../geos/iv.html"> Cote d'Ivoire </option>
-			
-				<option value="../geos/hr.html"> Croatia </option>
-			
-				<option value="../geos/cu.html"> Cuba </option>
-			
-				<option value="../geos/cc.html"> Curacao </option>
-			
-				<option value="../geos/cy.html"> Cyprus </option>
-			
-				<option value="../geos/ez.html"> Czech Republic </option>
-			
-				<option value="../geos/da.html"> Denmark </option>
-			
-				<option value="../geos/dx.html"> Dhekelia </option>
-			
-				<option value="../geos/dj.html"> Djibouti </option>
-			
-				<option value="../geos/do.html"> Dominica </option>
-			
-				<option value="../geos/dr.html"> Dominican Republic </option>
-			
-				<option value="../geos/ec.html"> Ecuador </option>
-			
-				<option value="../geos/eg.html"> Egypt </option>
-			
-				<option value="../geos/es.html"> El Salvador </option>
-			
-				<option value="../geos/ek.html"> Equatorial Guinea </option>
-			
-				<option value="../geos/er.html"> Eritrea </option>
-			
-				<option value="../geos/en.html"> Estonia </option>
-			
-				<option value="../geos/et.html"> Ethiopia </option>
-			
-				<option value="../geos/fk.html"> Falkland Islands (Islas Malvinas) </option>
-			
-				<option value="../geos/fo.html"> Faroe Islands </option>
-			
-				<option value="../geos/fj.html"> Fiji </option>
-			
-				<option value="../geos/fi.html"> Finland </option>
-			
-				<option value="../geos/fr.html"> France </option>
-			
-				<option value="../geos/fp.html"> French Polynesia </option>
-			
-				<option value="../geos/fs.html"> French Southern and Antarctic Lands </option>
-			
-				<option value="../geos/gb.html"> Gabon </option>
-			
-				<option value="../geos/ga.html"> Gambia, The </option>
-			
-				<option value="../geos/gz.html"> Gaza Strip </option>
-			
-				<option value="../geos/gg.html"> Georgia </option>
-			
-				<option value="../geos/gm.html"> Germany </option>
-			
-				<option value="../geos/gh.html"> Ghana </option>
-			
-				<option value="../geos/gi.html"> Gibraltar </option>
-			
-				<option value="../geos/gr.html"> Greece </option>
-			
-				<option value="../geos/gl.html"> Greenland </option>
-			
-				<option value="../geos/gj.html"> Grenada </option>
-			
-				<option value="../geos/gq.html"> Guam </option>
-			
-				<option value="../geos/gt.html"> Guatemala </option>
-			
-				<option value="../geos/gk.html"> Guernsey </option>
-			
-				<option value="../geos/gv.html"> Guinea </option>
-			
-				<option value="../geos/pu.html"> Guinea-Bissau </option>
-			
-				<option value="../geos/gy.html"> Guyana </option>
-			
-				<option value="../geos/ha.html"> Haiti </option>
-			
-				<option value="../geos/hm.html"> Heard Island and McDonald Islands </option>
-			
-				<option value="../geos/vt.html"> Holy See (Vatican City) </option>
-			
-				<option value="../geos/ho.html"> Honduras </option>
-			
-				<option value="../geos/hk.html"> Hong Kong </option>
-			
-				<option value="../geos/um.html"> Howland Island </option>
-			
-				<option value="../geos/hu.html"> Hungary </option>
-			
-				<option value="../geos/ic.html"> Iceland </option>
-			
-				<option value="../geos/in.html"> India </option>
-			
-				<option value="../geos/xo.html"> Indian Ocean </option>
-			
-				<option value="../geos/id.html"> Indonesia </option>
-			
-				<option value="../geos/ir.html"> Iran </option>
-			
-				<option value="../geos/iz.html"> Iraq </option>
-			
-				<option value="../geos/ei.html"> Ireland </option>
-			
-				<option value="../geos/im.html"> Isle of Man </option>
-			
-				<option value="../geos/is.html"> Israel </option>
-			
-				<option value="../geos/it.html"> Italy </option>
-			
-				<option value="../geos/jm.html"> Jamaica </option>
-			
-				<option value="../geos/jn.html"> Jan Mayen </option>
-			
-				<option value="../geos/ja.html"> Japan </option>
-			
-				<option value="../geos/um.html"> Jarvis Island </option>
-			
-				<option value="../geos/je.html"> Jersey </option>
-			
-				<option value="../geos/um.html"> Johnston Atoll </option>
-			
-				<option value="../geos/jo.html"> Jordan </option>
-			
-				<option value="../geos/kz.html"> Kazakhstan </option>
-			
-				<option value="../geos/ke.html"> Kenya </option>
-			
-				<option value="../geos/um.html"> Kingman Reef </option>
-			
-				<option value="../geos/kr.html"> Kiribati </option>
-			
-				<option value="../geos/kn.html"> Korea, North </option>
-			
-				<option value="../geos/ks.html"> Korea, South </option>
-			
-				<option value="../geos/kv.html"> Kosovo </option>
-			
-				<option value="../geos/ku.html"> Kuwait </option>
-			
-				<option value="../geos/kg.html"> Kyrgyzstan </option>
-			
-				<option value="../geos/la.html"> Laos </option>
-			
-				<option value="../geos/lg.html"> Latvia </option>
-			
-				<option value="../geos/le.html"> Lebanon </option>
-			
-				<option value="../geos/lt.html"> Lesotho </option>
-			
-				<option value="../geos/li.html"> Liberia </option>
-			
-				<option value="../geos/ly.html"> Libya </option>
-			
-				<option value="../geos/ls.html"> Liechtenstein </option>
-			
-				<option value="../geos/lh.html"> Lithuania </option>
-			
-				<option value="../geos/lu.html"> Luxembourg </option>
-			
-				<option value="../geos/mc.html"> Macau </option>
-			
-				<option value="../geos/mk.html"> Macedonia </option>
-			
-				<option value="../geos/ma.html"> Madagascar </option>
-			
-				<option value="../geos/mi.html"> Malawi </option>
-			
-				<option value="../geos/my.html"> Malaysia </option>
-			
-				<option value="../geos/mv.html"> Maldives </option>
-			
-				<option value="../geos/ml.html"> Mali </option>
-			
-				<option value="../geos/mt.html"> Malta </option>
-			
-				<option value="../geos/rm.html"> Marshall Islands </option>
-			
-				<option value="../geos/mr.html"> Mauritania </option>
-			
-				<option value="../geos/mp.html"> Mauritius </option>
-			
-				<option value="../geos/mx.html"> Mexico </option>
-			
-				<option value="../geos/fm.html"> Micronesia, Federated States of </option>
-			
-				<option value="../geos/um.html"> Midway Islands </option>
-			
-				<option value="../geos/md.html"> Moldova </option>
-			
-				<option value="../geos/mn.html"> Monaco </option>
-			
-				<option value="../geos/mg.html"> Mongolia </option>
-			
-				<option value="../geos/mj.html"> Montenegro </option>
-			
-				<option value="../geos/mh.html"> Montserrat </option>
-			
-				<option value="../geos/mo.html"> Morocco </option>
-			
-				<option value="../geos/mz.html"> Mozambique </option>
-			
-				<option value="../geos/wa.html"> Namibia </option>
-			
-				<option value="../geos/nr.html"> Nauru </option>
-			
-				<option value="../geos/bq.html"> Navassa Island </option>
-			
-				<option value="../geos/np.html"> Nepal </option>
-			
-				<option value="../geos/nl.html"> Netherlands </option>
-			
-				<option value="../geos/nc.html"> New Caledonia </option>
-			
-				<option value="../geos/nz.html"> New Zealand </option>
-			
-				<option value="../geos/nu.html"> Nicaragua </option>
-			
-				<option value="../geos/ng.html"> Niger </option>
-			
-				<option value="../geos/ni.html"> Nigeria </option>
-			
-				<option value="../geos/ne.html"> Niue </option>
-			
-				<option value="../geos/nf.html"> Norfolk Island </option>
-			
-				<option value="../geos/cq.html"> Northern Mariana Islands </option>
-			
-				<option value="../geos/no.html"> Norway </option>
-			
-				<option value="../geos/mu.html"> Oman </option>
-			
-				<option value="../geos/zn.html"> Pacific Ocean </option>
-			
-				<option value="../geos/pk.html"> Pakistan </option>
-			
-				<option value="../geos/ps.html"> Palau </option>
-			
-				<option value="../geos/um.html"> Palmyra Atoll </option>
-			
-				<option value="../geos/pm.html"> Panama </option>
-			
-				<option value="../geos/pp.html"> Papua New Guinea </option>
-			
-				<option value="../geos/pf.html"> Paracel Islands </option>
-			
-				<option value="../geos/pa.html"> Paraguay </option>
-			
-				<option value="../geos/pe.html"> Peru </option>
-			
-				<option value="../geos/rp.html"> Philippines </option>
-			
-				<option value="../geos/pc.html"> Pitcairn Islands </option>
-			
-				<option value="../geos/pl.html"> Poland </option>
-			
-				<option value="../geos/po.html"> Portugal </option>
-			
-				<option value="../geos/rq.html"> Puerto Rico </option>
-			
-				<option value="../geos/qa.html"> Qatar </option>
-			
-				<option value="../geos/ro.html"> Romania </option>
-			
-				<option value="../geos/rs.html"> Russia </option>
-			
-				<option value="../geos/rw.html"> Rwanda </option>
-			
-				<option value="../geos/tb.html"> Saint Barthelemy </option>
-			
-				<option value="../geos/sh.html"> Saint Helena, Ascension, and Tristan da Cunha </option>
-			
-				<option value="../geos/sc.html"> Saint Kitts and Nevis </option>
-			
-				<option value="../geos/st.html"> Saint Lucia </option>
-			
-				<option value="../geos/rn.html"> Saint Martin </option>
-			
-				<option value="../geos/sb.html"> Saint Pierre and Miquelon </option>
-			
-				<option value="../geos/vc.html"> Saint Vincent and the Grenadines </option>
-			
-				<option value="../geos/ws.html"> Samoa </option>
-			
-				<option value="../geos/sm.html"> San Marino </option>
-			
-				<option value="../geos/tp.html"> Sao Tome and Principe </option>
-			
-				<option value="../geos/sa.html"> Saudi Arabia </option>
-			
-				<option value="../geos/sg.html"> Senegal </option>
-			
-				<option value="../geos/ri.html"> Serbia </option>
-			
-				<option value="../geos/se.html"> Seychelles </option>
-			
-				<option value="../geos/sl.html"> Sierra Leone </option>
-			
-				<option value="../geos/sn.html"> Singapore </option>
-			
-				<option value="../geos/sk.html"> Sint Maarten </option>
-			
-				<option value="../geos/lo.html"> Slovakia </option>
-			
-				<option value="../geos/si.html"> Slovenia </option>
-			
-				<option value="../geos/bp.html"> Solomon Islands </option>
-			
-				<option value="../geos/so.html"> Somalia </option>
-			
-				<option value="../geos/sf.html"> South Africa </option>
-			
-				<option value="../geos/oo.html"> Southern Ocean </option>
-			
-				<option value="../geos/sx.html"> South Georgia and South Sandwich Islands </option>
-			
-				<option value="../geos/od.html"> South Sudan </option>
-			
-				<option value="../geos/sp.html"> Spain </option>
-			
-				<option value="../geos/pg.html"> Spratly Islands </option>
-			
-				<option value="../geos/ce.html"> Sri Lanka </option>
-			
-				<option value="../geos/su.html"> Sudan </option>
-			
-				<option value="../geos/ns.html"> Suriname </option>
-			
-				<option value="../geos/sv.html"> Svalbard </option>
-			
-				<option value="../geos/wz.html"> Swaziland </option>
-			
-				<option value="../geos/sw.html"> Sweden </option>
-			
-				<option value="../geos/sz.html"> Switzerland </option>
-			
-				<option value="../geos/sy.html"> Syria </option>
-			
-				<option value="../geos/tw.html"> Taiwan </option>
-			
-				<option value="../geos/ti.html"> Tajikistan </option>
-			
-				<option value="../geos/tz.html"> Tanzania </option>
-			
-				<option value="../geos/th.html"> Thailand </option>
-			
-				<option value="../geos/tt.html"> Timor-Leste </option>
-			
-				<option value="../geos/to.html"> Togo </option>
-			
-				<option value="../geos/tl.html"> Tokelau </option>
-			
-				<option value="../geos/tn.html"> Tonga </option>
-			
-				<option value="../geos/td.html"> Trinidad and Tobago </option>
-			
-				<option value="../geos/ts.html"> Tunisia </option>
-			
-				<option value="../geos/tu.html"> Turkey </option>
-			
-				<option value="../geos/tx.html"> Turkmenistan </option>
-			
-				<option value="../geos/tk.html"> Turks and Caicos Islands </option>
-			
-				<option value="../geos/tv.html"> Tuvalu </option>
-			
-				<option value="../geos/ug.html"> Uganda </option>
-			
-				<option value="../geos/up.html"> Ukraine </option>
-			
-				<option value="../geos/ae.html"> United Arab Emirates </option>
-			
-				<option value="../geos/uk.html"> United Kingdom </option>
-			
-				<option value="../geos/us.html"> United States </option>
-			
-				<option value="../geos/um.html"> United States Pacific Island Wildlife Refuges </option>
-			
-				<option value="../geos/uy.html"> Uruguay </option>
-			
-				<option value="../geos/uz.html"> Uzbekistan </option>
-			
-				<option value="../geos/nh.html"> Vanuatu </option>
-			
-				<option value="../geos/ve.html"> Venezuela </option>
-			
-				<option value="../geos/vm.html"> Vietnam </option>
-			
-				<option value="../geos/vq.html"> Virgin Islands </option>
-			
-				<option value="../geos/wq.html"> Wake Island </option>
-			
-				<option value="../geos/wf.html"> Wallis and Futuna </option>
-			
-				<option value="../geos/we.html"> West Bank </option>
-			
-				<option value="../geos/wi.html"> Western Sahara </option>
-			
-				<option value="../geos/ym.html"> Yemen </option>
-			
-				<option value="../geos/za.html"> Zambia </option>
-			
-				<option value="../geos/zi.html"> Zimbabwe </option>
-			
-				<option value="../geos/ee.html"> European Union </option>
-			
-		</select>
-	</form>
-</div>
-
-							</td>
-						</tr>
-						<tr>
-							<td> 
-<style>
-.description-box .text-holder-full .text-box { line-height: 12px; }
-</style>
-<link rel="stylesheet" type="text/css" href="../styles/navigation.css">
-<script type="text/javascript">
-var timeout         = 500;
-var closetimer		= 0;
-var ddmenuitem      = 0;
-
-function wfbNav_open()
-{	wfbNav_canceltimer();
-	wfbNav_close();
-	ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
-
-function wfbNav_close()
-{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
-
-function wfbNav_timer()
-{	closetimer = window.setTimeout(wfbNav_close, timeout);}
-
-function wfbNav_canceltimer()
-{	if(closetimer)
-	{	window.clearTimeout(closetimer);
-		closetimer = null;}}
-
-$(document).ready(function()
-{	$('#wfbNav > li').bind('mouseover', wfbNav_open);
-	$('#wfbNav > li').bind('mouseout',  wfbNav_timer);});
-
-document.onclick = wfbNav_close;
-</script>
-
-	<div>
-		<ul id="wfbNav" style="z-index: 9999;">
-			<li style="border-bottom: 2px solid #CCCCCC; "><a href="../index.html" style="width:20px; height: 12px;" title="The World Factbook Home"><img src="../graphics/home_on.png" border="0"></a></li>
-			<li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);" style="width:65px;" title="About">ABOUT</a>
-				<ul class="sub_menu">
-					<li><a href="../docs/history.html">&nbsp;&nbsp;History</a></li>
-					<li><a href="../docs/contributor_copyright.html">&nbsp;&nbsp;Copyright and Contributors</a></li>
-					<li><a href="../docs/purchase_info.html">&nbsp;&nbsp;Purchasing</a></li>
-					<li><a href="../docs/didyouknow.html">&nbsp;&nbsp;Did You Know?</a></li>
-					
-				</ul>
-			</li>
-			<li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);"  style="width:95px;" title="References">REFERENCES</a>
-				<ul class="sub_menu">
-					<li><a href="../docs/refmaps.html">&nbsp;&nbsp;Regional and World Maps</a></li>
-					<li><a href="../docs/flagsoftheworld.html">&nbsp;&nbsp;Flags of the World</a></li>
-					<li><a href="../docs/gallery.html">&nbsp;&nbsp;Gallery of Covers</a></li>
-					<li><a href="../docs/notesanddefs.html">&nbsp;&nbsp;Definitions and Notes</a></li>
-					<li><a href="../docs/profileguide.html">&nbsp;&nbsp;Guide to Country Profiles</a></li>
-					<li><a href="../rankorder/rankorderguide.html">&nbsp;&nbsp;Guide to Country Comparisons</a></li>
-					
-					<li><a href="../docs/guidetowfbook.html">&nbsp;&nbsp;The World Factbook Users Guide</a></li>
-				</ul>
-			</li>
-			<li style="border-bottom: 2px solid #CCCCCC; "><a href="javascript:void(0);" title="Appendices">APPENDICES</a>
-				<ul class="sub_menu">
-					<li><a href="../appendix/appendix-a.html">&nbsp;&nbsp;A: abbreviations</a></li>
-					<li><a href="../appendix/appendix-b.html">&nbsp;&nbsp;B: international organizations and groups</a></li>
-					<li><a href="../appendix/appendix-c.html">&nbsp;&nbsp;C: selected international environmental agreements</a></li>
-					<li><a href="../appendix/appendix-d.html">&nbsp;&nbsp;D: cross-reference list of country data codes</a></li>
-					<li><a href="../appendix/appendix-e.html">&nbsp;&nbsp;E: cross-reference list of hydrographic data codes</a></li>
-					<li><a href="../appendix/appendix-f.html">&nbsp;&nbsp;F: cross-reference list of geographic names</a></li>
-					<li><a href="../appendix/appendix-g.html">&nbsp;&nbsp;G: weights and measures</a></li>
-				</ul>
-			</li>
-			<li id="faqs" style="border-bottom: 2px solid #CCCCCC; "><a href="../docs/faqs.html" style="cursor:pointer;width:50px;">FAQ<span style="text-transform:lowercase;">s</span></a></li>
-			
-			
-				<li id="contact" style="border-bottom: 2px solid #CCCCCC; "> <a href="../docs/contact.html" title="Contact" style="cursor:pointer;width:73px;"> CONTACT </a> </li>
-			
-			
-			
-			
-			
-		</ul>
-	</div>
-	<div class="smalltext_nav" align="right" valign="bottom" style="border-bottom: 2px solid #CCCCCC; height: 22px;">
-		
-			<a href="../print/textversion.html"><img src="../graphics/bandwidth_btn_off.gif" alt="View Text Low Bandwidth Version" title="View Text Low Bandwidth Version" width="173" height="8" border="0" /></a><br>
-			
-			<a href="https://www.cia.gov/library/publications/download/"><img src="../graphics/download_btn_off.gif" alt="Download Publication" title="Download Publication"  border="0" id="Download Publication" /></a>
-		
-	</div>
-	<div class="clear"> </div>
-	</div>
-</td>
-						</tr>
-						<tr> 
-							<td>
-								<!-- InstanceBeginEditable name="mainContent" -->
-							      
-								
-<script>
-$(document).ready(function() { 
-	function GetURLParameter(sParam)
-	{
-		var sPageURL = window.location.search.substring(1);
-		var sURLVariables = sPageURL.split('&');
-		for (var i = 0; i < sURLVariables.length; i++)
-			{ 
-				var sParameterName = sURLVariables[i].split('=');
-					if (sParameterName[0] == sParam)
-						{ 
-							return sParameterName[1];
-						}
-			}
-		}
-
-	var fieldkey = GetURLParameter('fieldkey');
-	var alphaletter = GetURLParameter('alphaletter');
-	var countryname = GetURLParameter('countryname');
-	var countrycode = GetURLParameter('countrycode');
+                   <div class="fbsmalltext_nav">
+                       <ul>		
+                         <li class="low-band"><a href="#LowBand"><img src="../graphics/bandwidth_btn_off.gif" /></a></li>
+                         <li class="fb-download"><a href="#download"><img src="../graphics/download_btn_off.gif" /></a></li>
+                       </ul>  
+	             </div> 
+                   </div>  <!--  fbNav  -->
 
 
-	$("#alpha").html(alphaletter);
-	$("#" + fieldkey).addClass('selected');
-	
-	//$('html,body').animate({scrollTop:$('#' + fieldkey).offset.top + 20},1000);
-	$("#" + fieldkey).offset({top: 20});
-	
-});
-</script>
+ 
+             </div><!-- fbHeader -->
 
 
-
-
-
-
-<script language="javascript" type="text/javascript">
-<!--
-function MM_openBrWindow(theURL,winName,features) { //v2.0
-  window.open(theURL,winName,features);
-}
-//-->
-</script>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0" id="fieldlisting1"  >
-  <tr height="25">
-    <td style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;" class="region">Field Listing<strong> :: Major urban areas - population</strong></span></td>
-    <td align="right" valign="middle" style="background-image: url(../graphics/gold_gradiant.gif); background-repeat: repeat-x;"> 
-<script language="javascript" type="text/javascript">
-<!--
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-
-
-
-			<div id="print">
-				
-					<a href="print_2265.html" target="_blank"><img src="../graphics/print.gif" alt="Print Page" width="25" height="18" border="0" title="Print Page" style="color:#999999" /></a>
-				
-			</div>
-		</td>
-  </tr>
-</table>
-<table id="fieldlisting"  cellpadding="6" cellspacing="2" width="100%">
-  <tr>
-    <td colspan="2">
-      <span class="category_data">This entry provides the population of the capital and up to four major cities defined as urban agglomerations with populations of at least 750,000 people. An <em>urban agglomeration</em> is defined as comprising the city or town proper and also the suburban fringe or thickly settled territory lying outside of, but adjacent to, the boundaries of the city. For smaller countries, lacking urban centers of 750,000 or more, only the population of the capital is presented.</span></td>
-  </tr>
-  <tr>
-    <td colspan="2">
-	
-	</td>
-  </tr>
-</table>
-<table width="100%" border="0" cellspacing="2" cellpadding="2">
-  <tr bgcolor="#F8f8e7" valign="middle" height="25">
-    
-    <th scope="col"width="200" align="middle" style="padding-left: 5px;"><div class="smalltext"><strong>Country</strong></div></th>
-    
-    <th scope="col"align="middle" class="smalltext" style="padding-left: 5px;"> Major urban areas - population </th>
-  </tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-	<div  style="height:29px;width: 100%;" align="right"><a href="#wfbtop" class="go-top1"><img src="../graphics/backtotop_icon.gif" alt="Back to Top" width="16" height="16" border="0" style="padding:2px; cursor: pointer;" title="Back to Top" /></a></div>
-
-  <script>
-	$(document).ready(function() {
-		// Show or hide the sticky footer button
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 350) {
-				$('.go-top1').fadeIn(100);
-			} else {
-				$('.go-top1').fadeOut(100);
-			}
-		});
-		
-		// Animate the scroll to top
-		$('.go-top1').click(function(event) {
-			event.preventDefault();
-			
-			$('html, body').animate({scrollTop: 350}, 300);
-		})
-	});
-</script>	
-							
-								<!-- InstanceEndEditable --> 
-							</td>
-						</tr>
-						<tr>
-							<td style="height:75px;">&nbsp;</td>
-						</tr>
-					</table>
-				</div>
-                 </div>
-               </article>
+<div class=fbTitleRankOrder>FIELD LISTING :: <strong>TERRORIST GROUPS - FOREIGN</strong>
+               <span id=fieldPrint>
+		<a target=_blank href=print_2265.html>
+		<img width=25 border=0 height=18 style=color:#999999 title=Print Page alt=Print Page src=../graphics/print.gif>
+		</a></span>
              </div>
+<div class=rankOrderDesc>This entry provides the population of the capital and up to four major cities defined as urban agglomerations with populations of at least 750,000 people. An <em>urban agglomeration</em> is defined as comprising the city or town proper and also the suburban fringe or thickly settled territory lying outside of, but adjacent to, the boundaries of the city. For smaller countries, lacking urban centers of 750,000 or more, only the population of the capital is presented.
+             <p class=comparison><br /><a alt=Country comparison to the world href=../rankorder/2265rank.html title=Country comparison to the world ><strong>Country Comparison to the World</strong></a></p></div>
+<table id=fieldListing>
+                 <tbody>
+                     <tr class=fieldHeading valign=middle bgcolor=#F8f8e7 height=25><th width=200px>Country</th><th>MAJOR URBAN AREAS - POPULATION </th></tr>
+<tr id=af><td class=country><a href=../geos/af.html>Afghanistan</td><td class=fieldData>
+<strong>Harakat ul-Mujahidin (HUM): </strong><br />
+goals: aims to annex Kashmi into Pakistan and establish an Islamic state in Kashmir<br />
+areas of operation: maintains an operational presence, including running a paramilitary training camp in the east<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ag"><td class=country><a href=../geos/ag.html>Algeria</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Algeria as its Wilayat al-Jazair<br />
+</td></tr>
+<tr id=eg><td class=country><a href=../geos/eg.html>Egypt</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Egypt as its Wilayat Sinai<br />
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains an operational presence, especially along the Egypt-Israel border, where operatives stage attacks inside Israeli territory<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="gz"><td class=country><a href=../geos/gz.html>Gaza Strip</td><td class=fieldData>
+<strong>Abdallah Azzam Brigades (AAB): </strong><br />
+goals: aims to disrupt Israel's economy and its efforts to establish security<br />
+areas of operation: operates as the Marwan Haddad Division; launches homemade rockets into Israeli territory<br />
+</td></tr>
+<tr id=in><td class=country><a href=../geos/in.html>India</td><td class=fieldData>
+<strong>Harakat ul-Mujahidin (HUM): </strong><br />
+goals: aims to annex Kashmi into Pakistan and establish an Islamic state in Kashmir<br />
+areas of operation: maintains an operational presence, conducting attacks against Indian troops and civilian targets in the Kashmir region since at least 2005<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="iz"><td class=country><a href=../geos/iz.html>Iraq</td><td class=fieldData>
+<strong>Abu Nidal Organization (ANO): </strong><br />
+goals: aims to destroy Israel through armed conflict<br />
+areas of operation: although former and possibly current associates may be in Iraq, the group is considered inactive<br />
+</td></tr>
+<tr id=is><td class=country><a href=../geos/is.html>Israel</td><td class=fieldData>
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains an operational presence, especially in the south<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="le"><td class=country><a href=../geos/le.html>Lebanon</td><td class=fieldData>
+<strong>Abu Nidal Organization (ANO): </strong><br />
+goals: aims to destroy Israel through armed conflict<br />
+areas of operation: although former and possibly current associates may be in Lebanon, the group is considered inactive<br />
+</td></tr>
+<tr id=ly><td class=country><a href=../geos/ly.html>Libya</td><td class=fieldData>
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains networks for operational planning, logistics, transferring funds, and smuggling fighters and arms to Syria from Libya<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="pk"><td class=country><a href=../geos/pk.html>Pakistan</td><td class=fieldData>
+<strong>Khorasan (ISIL-K): </strong><br />
+goals: aims to establish an Islamic caliphate in the Afghanistan-Pakistan region<br />
+areas of operation: maintains a limited operational and recruitment presence across the country; conducts small-scale shooting or bombing attacks against Shi&rsquo;a Muslims, military installations, and government buildings; claimed responsibility for the 13 May 2015 shooting attack against Shia Muslim bus passangers in Karachi, killing 45; refers to Pakistan and Afghanistan as its Wilayat al-Khorasan<br />
+</td></tr>
+<tr id=rs><td class=country><a href=../geos/rs.html>Russia</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence in the northern Caucasus's Dagestan, Chechnya, Ingushetia, and Kabardino-Balkaria (ISIL's Wilayat Kavkaz) regions under Rustam ASELDEROV (a.k.a. Abu Mukhammad Kadarsky), where ISIL has been known as ISIL-Caucasus Province (ISIL-CP) since 23 June 2015<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="sa"><td class=country><a href=../geos/sa.html>Saudi Arabia</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goals: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Saudi Arabia as its Wilayat Haramayn<br />
+</td></tr>
+<tr id=sy><td class=country><a href=../geos/sy.html>Syria</td><td class=fieldData>
+<strong>Abdallah Azzam Brigades (AAB): </strong><br />
+goals: aims to attack Shi'a Muslim and Western interests<br />
+areas of operation: maintains an operational presence<br />
+<strong>Mujahidin Shura Council in the Environs of Jerusalem (MSC): </strong><br />
+goals: aims to threaten Israel's existence<br />
+areas of operation: maintains networks for operational planning, logistics, transferring funds, and smuggling fighters and arms to Syria from the Gaza Strip and Libya<br />
+</td></tr>
+<tr style="background: #EEEEEE" id="ym"><td class=country><a href=../geos/ym.html>Yemen</td><td class=fieldData>
+<strong>Islamic State of Iraq and the Levant (ISIL): </strong><br />
+goal: aims to establish a global Islamic caliphate<br />
+areas of operation: maintains an operational presence; ISIL refers to Yemen as its Wilayat Sanaa<br />
+</td></tr>
+   </tbody>
+            </table>
            </div>
-         </section> 
+          </article>
+         </div>
+        </div>
+       </section>
         <footer id="footer"><span class="divider"></span>
        <a href="#" class="logo-2"><img src="../images/logo-2.png" alt="Central Intelligence Agency"></a>
        <div class="footer-holder">

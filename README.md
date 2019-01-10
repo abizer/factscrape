@@ -1,17 +1,19 @@
 # factscrape
-Data parsed into CSV (by statistic) and JSON (by country) from the CIA World Factbook
+Data from the CIA World Factbook "parsed" into JSON, organized by country and statistic.
 
-CIA data is pulled from [this zip from 2014][1].
+CIA data is pulled from [this zip from 2017][1].
 Only [this folder][2] is used.
 
-See `collect_stats.py` for the logic used to parse the files the `fields/` folder. 
+`collect_stats.py` contains the code that attempts to turn the HTML in the `fields`
+folder into some semblance of JSON.
 
-The `stat-out` folder is composed of CSV files containing country,data pairs for every country which exposes the field given by the filename. 
-The `country-out` folder is composed of JSON files representing every country and containing every field that country exposes.
+The by-statistic and by-country folders contain JSON blobs with information organized
+according to the name of the respective folder.
 
-The data has not been completely wrangled in order to make it more flexible for manipulation down the road.
+The data has not been completely wrangled for various reasons, not the least of which
+is the utterly awful format the CIA provides it in.
 
 All copyrights/trademarks belong to their owners and/or the CIA.
 
-[1]: https://www.cia.gov/library/publications/download/download-2014/factbook.zip
-[2]: https://www.cia.gov/library/publications/download/download-2014/fields.zip
+[1]: https://www.cia.gov/library/publications/download/download-2017/factbook.zip
+[2]: https://www.cia.gov/library/publications/download/download-2017/fields.zip
