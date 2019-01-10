@@ -1,48 +1,85 @@
+#!/usr/bin/env python3
+
 import sys
 import os
-import lxml.html
+from bs4 import BeautifulSoup
 import csv
 from collections import defaultdict
-import simplejson as json
+import json
+from pathlib import Path
+from slugify import slugify
 
-# load files
-stat_files = [fn for fn in os.listdir('fields') if fn.startswith('print_')]
-countries = defaultdict(dict)
-
-# extract field name
-
-
-def get_field_name(lxmlobj):
-    field_name = lx.xpath(
-        '//*[@class="region"]')[0].getchildren()[0].text.replace(':', '').strip()
-    return unicode(field_name)
-
-# extract the country name and stat value
+def coerce_open(path):
+    g = path.open('rb').read()
+    return g.decode('ascii', 'ignore')
 
 
-def countrystat(lxmlobj):
-    country = lxmlobj.getchildren()[0].text.strip()
-    stat = lxmlobj.getnext().text_content().strip()
-    return unicode(country).encode('ascii', 'ignore'), unicode(stat).encode('ascii', 'ignore')
+def mangle(text):
+    return text.strip().encode('ascii', 'ignore')
 
-# generate the csvs
-for fn in stat_files:
-    with open(os.path.join('fields', fn)) as statfile:
-        lx = lxml.html.fromstring(statfile.read())
-        field_name = get_field_name(lx)
-        fname = "".join(x for x in field_name if x.isalnum()).lower().strip() + '.csv'
-        print "printing CSV for", field_name
-        with open(os.path.join('stat-out', fname), 'w') as csvout:
-            csvwrite = csv.writer(csvout, delimiter=',',
-                                  quotechar='"', quoting=csv.QUOTE_MINIMAL)
-            country_list = lx.xpath('//*[@class="fl_region"]')
 
-            for country in country_list:
-                c, stat = countrystat(country)
-                csvwrite.writerow([c, stat])
-                countries[c.lower()][field_name] = stat
+def extract_field_name(bsobj):
+    """Extract field name from beautifulsoup object."""
+    return mangle(bsobj.find(class_='fieldHeading').findChildren('th')[1].get_text())
 
-for country in countries:
-    print "printing JSON for", country
-    with open(os.path.join('country-out', country.replace(' ', '_') + '.json'), 'w') as cout:
-        cout.write(json.dumps(countries[country], indent=2, sort_keys=True))
+
+def extract_country_list(bsobj):
+    return bsobj.find_all(class_='country')
+
+
+def extract_statistics(bsobj):
+    """Extract country name and value of the statistic."""
+
+    country = bsobj.get_text()
+    statistic = bsobj.next_sibling.get_text()
+
+    return mangle(country), mangle(statistic)
+
+
+def parse_field_file(field_bs):
+
+    field_data = {}
+
+    field_name = extract_field_name(field_bs).decode('ascii')
+    country_list = extract_country_list(field_bs)
+
+    for country_bs in country_list:
+        country, statistic = extract_statistics(country_bs)
+        field_data[country.decode('ascii')] = statistic.decode('ascii')
+
+    return field_name, field_data
+
+
+def main():
+    field_source = Path('fields')
+    
+    by_country = defaultdict(dict)
+    by_field = {}
+
+    for path in field_source.glob('print_*.html'):
+        bs = BeautifulSoup(coerce_open(path), features='lxml')
+        
+        field_name, field_data = parse_field_file(bs)
+
+        if field_name == '':
+            print(path, "has an invalid or empty field name")
+
+        by_field[field_name.lower()] = field_data
+
+        for country, statistic in field_data.items():
+            by_country[country][field_name.lower()] = statistic
+
+            
+    for field in by_field:
+        with open('by-statistic/' + slugify(field) + '.json', 'w') as o:
+            print('writing file for', field)
+            o.write(json.dumps(by_field[field], indent=2))
+
+    for country in by_country:
+        with open('by-country/' + slugify(country) + '.json', 'w') as o:
+            print('writing file for', country)
+            o.write(json.dumps(by_country[country], indent=2))
+        
+        
+if __name__ == '__main__':
+    main()
